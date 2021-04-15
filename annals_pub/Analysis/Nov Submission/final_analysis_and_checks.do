@@ -357,15 +357,18 @@ lrtest model1 model2
 		drop regpred*
 		drop yhat
 
-
+*REGRESSIONS FOR APPENDIX
 ******************************************
-*Wallace vote as outcome and predictor
+*Wallace vote as outcome 
 *******************************************
 
-reg General Trumpgain PctWallace lynchratio pfarmown Pcturban PcthhNonhispwhite PctPop65plus PctWorkingclass PctUnemploy Pcthhlessthan25k Pctevangel changepercentFRNBrn, beta
 reg PctWallace lynchratio pfarmown Pcturban PcthhNonhispwhite PctPop65plus PctWorkingclass PctUnemploy Pcthhlessthan25k Pctevangel changepercentFRNBrn, beta
+reg PrimaryPcttrump Pctprimary_republican primdate lynchratio pfarmown Pcturban PcthhNonhispwhite PctPop65plus PctWorkingclass PctUnemploy Pcthhlessthan25k Pctevangel changepercentFRNBrn, beta
+reg General Trumpgain nevents_blk pfarmown Pcturban PcthhNonhispwhite PctPop65plus PctWorkingclass PctUnemploy Pcthhlessthan25k Pctevangel changepercentFRNBrn, beta
+reg General Trumpgain Naverted pfarmown Pcturban PcthhNonhispwhite PctPop65plus PctWorkingclass PctUnemploy Pcthhlessthan25k Pctevangel changepercentFRNBrn, beta
+reg PrimaryPcttrump Trumpgain nevents_blk pfarmown Pcturban PcthhNonhispwhite PctPop65plus PctWorkingclass PctUnemploy Pcthhlessthan25k Pctevangel changepercentFRNBrn, beta
+reg PrimaryPcttrump Trumpgain Naverted pfarmown Pcturban PcthhNonhispwhite PctPop65plus PctWorkingclass PctUnemploy Pcthhlessthan25k Pctevangel changepercentFRNBrn, beta
 
-		
 		
 		
 **************************************************************************
