@@ -2,7 +2,7 @@
  
 This repository holds the data, processing scripts, merging scripts, analysis scripts and log files for a 2021 Annals publication. Files that are most likely to be of interest are: 
 
-1) The appendix associated with the publication
+1)The appendix associated with the publication
 annals_pub/Appendix_for_ANNALS_publication.txt
 
 2)The codebook associated with the final dataset
