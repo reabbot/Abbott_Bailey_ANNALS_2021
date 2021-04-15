@@ -101,36 +101,18 @@ changepercentFRNBrn |  -9.520847    3.85202    -2.47   0.014                -.07
 -------------------------------------------------------------------------------------
 
 
-. ******************************************
-. *MODELS that did not make it into the paper but were explicitly mentioned as available in the appendix [Wallace vote as outcome and predictor]
-. *******************************************
-. 
-. reg General Trumpgain PctWallace lynchratio pfarmown Pcturban PcthhNonhispwhite PctPop65plus PctWorkingclass PctUnemploy Pcthhlessthan25k Pctevangel changepercentFRNBrn, beta
 
-      Source |       SS           df       MS      Number of obs   =       652
--------------+----------------------------------   F(12, 639)      =    300.72
-       Model |  119460.125        12  9955.01038   Prob > F        =    0.0000
-    Residual |  21153.3674       639  33.1038613   R-squared       =    0.8496
--------------+----------------------------------   Adj R-squared   =    0.8467
-       Total |  140613.492       651  215.996147   Root MSE        =    5.7536
+*************************************************************************************
+. ***********************************************************************************
+. *The following are models that did not make it into the paper but were explicitly mentioned as available in the appendix
+. ***********************************************************************************
+*************************************************************************************
 
--------------------------------------------------------------------------------------
-    GeneralPcttrump |      Coef.   Std. Err.      t    P>|t|                     Beta
---------------------+----------------------------------------------------------------
-          Trumpgain |   .6128471   .0493285    12.42   0.000                 .2276558
-         PctWallace |    .247265   .0138434    17.86   0.000                 .3253274
-         lynchratio |  -.7235447   .6695495    -1.08   0.280                -.0180854
-           pfarmown |  -2.676873   1.511899    -1.77   0.077                 -.034428
-           Pcturban |   .0131014   .0121564     1.08   0.282                 .0262826
-  PcthhNonhispwhite |   .7074517   .0193993    36.47   0.000                 .8875725
-       PctPop65plus |  -.2209349   .0729973    -3.03   0.003                 -.059688
-    PctWorkingclass |   .0822134   .0407808     2.02   0.044                 .0416989
-        PctUnemploy |   .1689793   .2186504     0.77   0.440                 .0142942
-   Pcthhlessthan25k |   .0342935   .0379264     0.90   0.366                 .0196874
-         Pctevangel |   .0609646   .0187742     3.25   0.001                 .0590002
-changepercentFRNBrn |  -10.72522   2.989095    -3.59   0.000                -.0783928
-              _cons |  -20.75001   5.495411    -3.78   0.000                        .
--------------------------------------------------------------------------------------
+
+
+*******************************************************************************
+*MODEL predicting Percent of Votes Won By Wallace Using Lynchratio and Controls
+*******************************************************************************
 
 . reg PctWallace lynchratio pfarmown Pcturban PcthhNonhispwhite PctPop65plus PctWorkingclass PctUnemploy Pcthhlessthan25k Pctevangel changepercentFRNBrn, beta
 
@@ -157,6 +139,164 @@ changepercentFRNBrn |  -2.438603   8.593376    -0.28   0.777                -.01
               _cons |   66.02183   15.52719     4.25   0.000                        .
 -------------------------------------------------------------------------------------
 
-. 
-.                 
+**********************************************************************************
+*MODEL predicting Percent of Votes Won By Trump in Primary Controling For Date of Primary and Percent of Primary Voters That Were Republican
+*************************************************************************************
+.reg PrimaryPcttrump Pctprimary_republican primdate lynchratio pfarmown Pcturban PcthhNonhispwhite PctPop65plus PctWorkingclass PctUnemploy Pcthhl
+> essthan25k Pctevangel changepercentFRNBrn, beta
+
+      Source |       SS           df       MS      Number of obs   =       551
+-------------+----------------------------------   F(12, 538)      =     36.82
+       Model |   13917.952        12  1159.82934   Prob > F        =    0.0000
+    Residual |  16945.9442       538  31.4980375   R-squared       =    0.4509
+-------------+----------------------------------   Adj R-squared   =    0.4387
+       Total |  30863.8962       550   56.116175   Root MSE        =    5.6123
+
+---------------------------------------------------------------------------------------
+      PrimaryPcttrump |      Coef.   Std. Err.      t    P>|t|                     Beta
+----------------------+----------------------------------------------------------------
+Pctprimary_republican |   .1832525   .0656347     2.79   0.005                  .132155
+             primdate |   .2233607   .0420754     5.31   0.000                 .1817592
+           lynchratio |   1.734716   .6983182     2.48   0.013                 .0840882
+             pfarmown |     2.9467   1.576462     1.87   0.062                 .0780555
+             Pcturban |  -.0421185   .0127668    -3.30   0.001                -.1655478
+    PcthhNonhispwhite |   .0308919   .0213578     1.45   0.149                 .0749164
+         PctPop65plus |  -.1003751   .0806417    -1.24   0.214                -.0557867
+      PctWorkingclass |    .141418   .0440376     3.21   0.001                 .1384221
+          PctUnemploy |   .6010928   .2311561     2.60   0.010                  .103019
+     Pcthhlessthan25k |   .4015308   .0488809     8.21   0.000                 .4580102
+           Pctevangel |  -.1280868    .022333    -5.74   0.000                -.2330208
+  changepercentFRNBrn |  -10.51882    3.17819    -3.31   0.001                -.1548737
+                _cons |   6.151841   5.849823     1.05   0.293                        .
+--------------------------------------------------------------------------------------
+
+*****************************************************************************************
+*MODEL predicting General Election Using Number of Fatal Lynching Events
+******************************************************************************************
+
+. reg General Trumpgain nevents_blk pfarmown Pcturban PcthhNonhispwhite PctPop65plus PctWorkingclass PctUnemploy Pcthhlessthan25k Pctevangel changepercentFRNBrn, beta
+
+      Source |       SS           df       MS      Number of obs   =       652
+-------------+----------------------------------   F(11, 640)      =    201.35
+       Model |  109091.153        11  9917.37756   Prob > F        =    0.0000
+    Residual |  31522.3389       640  49.2536545   R-squared       =    0.7758
+-------------+----------------------------------   Adj R-squared   =    0.7720
+       Total |  140613.492       651  215.996147   Root MSE        =    7.0181
+
+-------------------------------------------------------------------------------------
+    GeneralPcttrump |      Coef.   Std. Err.      t    P>|t|                     Beta
+--------------------+----------------------------------------------------------------
+          Trumpgain |   .4799161   .0594896     8.07   0.000                 .1782756
+        nevents_blk |   .3403432   .0907893     3.75   0.000                 .0806158
+           pfarmown |  -3.190072   1.846529    -1.73   0.085                -.0410283
+           Pcturban |  -.0191797   .0147776    -1.30   0.195                -.0384762
+  PcthhNonhispwhite |   .6328033   .0233531    27.10   0.000                 .7939183
+       PctPop65plus |  -.3472829   .0883755    -3.93   0.000                -.0938223
+    PctWorkingclass |   .1362011   .0499268     2.73   0.007                 .0690816
+        PctUnemploy |   .3086216   .2664993     1.16   0.247                 .0261068
+   Pcthhlessthan25k |  -.0215484   .0465341    -0.46   0.643                -.0123706
+         Pctevangel |   .1310222   .0226617     5.78   0.000                 .1268003
+changepercentFRNBrn |  -11.57502   3.649457    -3.17   0.002                -.0846042
+              _cons |  -6.190355   6.628234    -0.93   0.351                        .
+-------------------------------------------------------------------------------------
+
+*****************************************************************************************
+*MODEL predicting General Election Using Number of Averted Lynching Events
+******************************************************************************************
+. reg General Trumpgain Naverted pfarmown Pcturban PcthhNonhispwhite PctPop65plus PctWorkingclass PctUnemploy Pcthhlessthan25k Pctevangel changepercentFRNBrn, beta
+
+      Source |       SS           df       MS      Number of obs   =       652
+-------------+----------------------------------   F(11, 640)      =    196.81
+       Model |  108529.507        11  9866.31883   Prob > F        =    0.0000
+    Residual |  32083.9848       640  50.1312263   R-squared       =    0.7718
+-------------+----------------------------------   Adj R-squared   =    0.7679
+       Total |  140613.492       651  215.996147   Root MSE        =    7.0803
+
+-------------------------------------------------------------------------------------
+    GeneralPcttrump |      Coef.   Std. Err.      t    P>|t|                     Beta
+--------------------+----------------------------------------------------------------
+          Trumpgain |   .4777401   .0600196     7.96   0.000                 .1774673
+           Naverted |  -.2126796   .1318136    -1.61   0.107                -.0353672
+           pfarmown |  -3.868759   1.866352    -2.07   0.039                -.0497571
+           Pcturban |  -.0079236   .0152652    -0.52   0.604                -.0158954
+  PcthhNonhispwhite |    .607548   .0233537    26.02   0.000                 .7622329
+       PctPop65plus |  -.4024965   .0881438    -4.57   0.000                -.1087388
+    PctWorkingclass |   .1150376   .0501491     2.29   0.022                 .0583474
+        PctUnemploy |    .286436   .2688162     1.07   0.287                   .02423
+   Pcthhlessthan25k |   .0019944   .0466106     0.04   0.966                  .001145
+         Pctevangel |   .1575067   .0224329     7.02   0.000                 .1524314
+changepercentFRNBrn |  -12.59399   3.669407    -3.43   0.001                 -.092052
+              _cons |  -4.567899   6.715661    -0.68   0.497                        .
+-------------------------------------------------------------------------------------
+
+
+
+*****************************************************************************************
+*MODEL predicting Trump Primary Election Using Number of Fatal Lynching Events
+******************************************************************************************
+
+
+. reg PrimaryPcttrump Trumpgain nevents_blk pfarmown Pcturban PcthhNonhispwhite PctPop65plus PctWorkingclass PctUnemploy Pcthhlessthan25k Pctevangel changepercentFRNBrn, beta
+
+      Source |       SS           df       MS      Number of obs   =       551
+-------------+----------------------------------   F(11, 539)      =     36.01
+       Model |  13073.2567        11  1188.47788   Prob > F        =    0.0000
+    Residual |  17790.6395       539  33.0067524   R-squared       =    0.4236
+-------------+----------------------------------   Adj R-squared   =    0.4118
+       Total |  30863.8962       550   56.116175   Root MSE        =    5.7452
+
+-------------------------------------------------------------------------------------
+    PrimaryPcttrump |      Coef.   Std. Err.      t    P>|t|                     Beta
+--------------------+----------------------------------------------------------------
+          Trumpgain |   .1616712    .051883     3.12   0.002                 .1160274
+        nevents_blk |   .1235179   .0782301     1.58   0.115                   .05968
+           pfarmown |   4.394971    1.54454     2.85   0.005                 .1164189
+           Pcturban |  -.0460975    .013178    -3.50   0.001                -.1811872
+  PcthhNonhispwhite |   .0365141   .0214715     1.70   0.090                  .088551
+       PctPop65plus |  -.0284419    .078485    -0.36   0.717                -.0158075
+    PctWorkingclass |   .1210612   .0456032     2.65   0.008                 .1184965
+        PctUnemploy |   .7501764   .2352619     3.19   0.002                 .1285698
+   Pcthhlessthan25k |   .3351061   .0457948     7.32   0.000                 .3822422
+         Pctevangel |  -.1116716   .0214675    -5.20   0.000                -.2031575
+changepercentFRNBrn |  -8.423454   3.265573    -2.58   0.010                -.1240227
+              _cons |   14.56968   5.959228     2.44   0.015                        .
+-------------------------------------------------------------------------------------
+
+
+
+
+
+*****************************************************************************************
+*MODEL predicting Trump Primary Election Using Number of Averted Lynching Events
+******************************************************************************************
+
+. reg PrimaryPcttrump Trumpgain Naverted pfarmown Pcturban PcthhNonhispwhite PctPop65plus PctWorkingclass PctUnemploy Pcthhlessthan25k Pctevangel changepercentFRNBrn, beta
+
+      Source |       SS           df       MS      Number of obs   =       551
+-------------+----------------------------------   F(11, 539)      =     35.90
+       Model |  13050.5029        11  1186.40935   Prob > F        =    0.0000
+    Residual |  17813.3933       539  33.0489672   R-squared       =    0.4228
+-------------+----------------------------------   Adj R-squared   =    0.4111
+       Total |  30863.8962       550   56.116175   Root MSE        =    5.7488
+
+-------------------------------------------------------------------------------------
+    PrimaryPcttrump |      Coef.   Std. Err.      t    P>|t|                     Beta
+--------------------+----------------------------------------------------------------
+          Trumpgain |   .1590058   .0519197     3.06   0.002                 .1141146
+           Naverted |   -.156722   .1167726    -1.34   0.180                -.0514625
+           pfarmown |   4.052642   1.549789     2.61   0.009                 .1073509
+           Pcturban |  -.0393027   .0134369    -2.92   0.004                -.1544803
+  PcthhNonhispwhite |   .0249205   .0217047     1.15   0.251                 .0604352
+       PctPop65plus |  -.0522037   .0772693    -0.68   0.500                -.0290139
+    PctWorkingclass |   .1060439   .0453199     2.34   0.020                 .1037974
+        PctUnemploy |   .7328678   .2353432     3.11   0.002                 .1256034
+   Pcthhlessthan25k |   .3483892   .0450921     7.73   0.000                 .3973937
+         Pctevangel |   -.099461   .0213013    -4.67   0.000                -.1809436
+changepercentFRNBrn |  -9.187311   3.236434    -2.84   0.005                -.1352693
+              _cons |   14.83984   5.977153     2.48   0.013                        .
+-------------------------------------------------------------------------------------
+
+
+
+
 
