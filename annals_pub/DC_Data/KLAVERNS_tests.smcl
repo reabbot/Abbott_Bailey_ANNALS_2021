@@ -1,0 +1,99 @@
+{smcl}
+{com}{sf}{ul off}{txt}{.-}
+      name:  {res}<unnamed>
+       {txt}log:  {res}C:\Users\bobab\Desktop\annals_pub\DC_Data\KLAVERNS_tests.smcl
+  {txt}log type:  {res}smcl
+ {txt}opened on:  {res}14 Mar 2021, 12:08:42
+{txt}
+{com}. /*Running anova for klan activity over pop. The following is an anova run on variables
+> meaned by cluster2 */
+. 
+. gen klavperwht= KLAVERNS/whtot*1000
+{txt}(216 missing values generated)
+
+{com}. 
+. oneway klavperwht stfips
+
+                        {txt}Analysis of Variance
+    Source              SS         df      MS            F     Prob > F
+{hline 72}
+Between groups     {res} 3.07527867      8   .384409834     11.19     0.0000
+{txt} Within groups     {res} 15.2843046    445   .034346752
+{txt}{hline 72}
+    Total          {res} 18.3595832    453   .040528881
+
+{txt}Bartlett's test for equal variances:  chi2({res}8{txt}) = {res}444.8734{txt}  Prob>chi2 = {res}0.000
+{txt}
+{com}. pwmean klavperwht, over(stfips) mcompare(tukey) effects
+
+{txt}Pairwise comparisons of means with equal variances
+
+{txt}{p2colset 1 14 16 2}{...}
+{p2col:over}:{space 1}{res:stfips}{p_end}
+{p2colreset}{...}
+
+{res}{txt}{hline 13}{c TT}{hline 13}
+{col 14}{c |}    Number of
+{col 14}{c |}  Comparisons
+{hline 13}{c +}{hline 13}
+{space 6}stfips {c |}{col 14}{res}{space 1}          36
+{txt}{hline 13}{c BT}{hline 13}
+
+{hline 13}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 14}{c |}{col 37}        T{col 46}ukey{col 54}            T{col 67}ukey
+{col 1}  klavperwht{col 14}{c |}   Contrast{col 26}   Std. Err.{col 38}      t{col 46}   P>|t|{col 54}     [95% Con{col 67}f. Interval]
+{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 6}stfips {c |}
+{space 3} 5 vs  1  {c |}{col 14}{res}{space 2}-.0245354{col 26}{space 2} .0390707{col 37}{space 1}   -0.63{col 46}{space 3}0.999{col 54}{space 4} -.146324{col 67}{space 3} .0972532
+{txt}{space 3}12 vs  1  {c |}{col 14}{res}{space 2} .0408926{col 26}{space 2} .0401654{col 37}{space 1}    1.02{col 46}{space 3}0.984{col 54}{space 4}-.0843081{col 67}{space 3} .1660933
+{txt}{space 3}13 vs  1  {c |}{col 14}{res}{space 2}-.0029587{col 26}{space 2} .0302641{col 37}{space 1}   -0.10{col 46}{space 3}1.000{col 54}{space 4}-.0972958{col 67}{space 3} .0913783
+{txt}{space 3}22 vs  1  {c |}{col 14}{res}{space 2} .2136416{col 26}{space 2} .0375523{col 37}{space 1}    5.69{col 46}{space 3}0.000{col 54}{space 4} .0965863{col 67}{space 3} .3306969
+{txt}{space 3}28 vs  1  {c |}{col 14}{res}{space 2} .1694694{col 26}{space 2} .0405682{col 37}{space 1}    4.18{col 46}{space 3}0.001{col 54}{space 4} .0430129{col 67}{space 3}  .295926
+{txt}{space 3}37 vs  1  {c |}{col 14}{res}{space 2} .1166533{col 26}{space 2} .0319141{col 37}{space 1}    3.66{col 46}{space 3}0.009{col 54}{space 4}  .017173{col 67}{space 3} .2161337
+{txt}{space 3}45 vs  1  {c |}{col 14}{res}{space 2} .0862419{col 26}{space 2}   .05092{col 37}{space 1}    1.69{col 46}{space 3}0.750{col 54}{space 4}-.0724824{col 67}{space 3} .2449661
+{txt}{space 3}47 vs  1  {c |}{col 14}{res}{space 2}-.0450119{col 26}{space 2} .0341267{col 37}{space 1}   -1.32{col 46}{space 3}0.925{col 54}{space 4}-.1513893{col 67}{space 3} .0613655
+{txt}{space 3}12 vs  5  {c |}{col 14}{res}{space 2}  .065428{col 26}{space 2} .0446642{col 37}{space 1}    1.46{col 46}{space 3}0.871{col 54}{space 4}-.0737961{col 67}{space 3}  .204652
+{txt}{space 3}13 vs  5  {c |}{col 14}{res}{space 2} .0215767{col 26}{space 2} .0360214{col 37}{space 1}    0.60{col 46}{space 3}1.000{col 54}{space 4}-.0907069{col 67}{space 3} .1338602
+{txt}{space 3}22 vs  5  {c |}{col 14}{res}{space 2}  .238177{col 26}{space 2} .0423297{col 37}{space 1}    5.63{col 46}{space 3}0.000{col 54}{space 4} .1062298{col 67}{space 3} .3701242
+{txt}{space 3}28 vs  5  {c |}{col 14}{res}{space 2} .1940048{col 26}{space 2} .0450268{col 37}{space 1}    4.31{col 46}{space 3}0.001{col 54}{space 4} .0536504{col 67}{space 3} .3343593
+{txt}{space 3}37 vs  5  {c |}{col 14}{res}{space 2} .1411887{col 26}{space 2} .0374184{col 37}{space 1}    3.77{col 46}{space 3}0.006{col 54}{space 4} .0245506{col 67}{space 3} .2578269
+{txt}{space 3}45 vs  5  {c |}{col 14}{res}{space 2} .1107772{col 26}{space 2} .0545387{col 37}{space 1}    2.03{col 46}{space 3}0.522{col 54}{space 4}-.0592272{col 67}{space 3} .2807817
+{txt}{space 3}47 vs  5  {c |}{col 14}{res}{space 2}-.0204765{col 26}{space 2} .0393225{col 37}{space 1}   -0.52{col 46}{space 3}1.000{col 54}{space 4}-.1430501{col 67}{space 3}  .102097
+{txt}{space 3}13 vs 12  {c |}{col 14}{res}{space 2}-.0438513{col 26}{space 2} .0372059{col 37}{space 1}   -1.18{col 46}{space 3}0.961{col 54}{space 4} -.159827{col 67}{space 3} .0721243
+{txt}{space 3}22 vs 12  {c |}{col 14}{res}{space 2}  .172749{col 26}{space 2} .0433421{col 37}{space 1}    3.99{col 46}{space 3}0.003{col 54}{space 4} .0376461{col 67}{space 3}  .307852
+{txt}{space 3}28 vs 12  {c |}{col 14}{res}{space 2} .1285768{col 26}{space 2} .0459799{col 37}{space 1}    2.80{col 46}{space 3}0.119{col 54}{space 4}-.0147484{col 67}{space 3} .2719021
+{txt}{space 3}37 vs 12  {c |}{col 14}{res}{space 2} .0757608{col 26}{space 2}   .03856{col 37}{space 1}    1.96{col 46}{space 3}0.569{col 54}{space 4}-.0444358{col 67}{space 3} .1959573
+{txt}{space 3}45 vs 12  {c |}{col 14}{res}{space 2} .0453493{col 26}{space 2} .0553282{col 37}{space 1}    0.82{col 46}{space 3}0.996{col 54}{space 4} -.127116{col 67}{space 3} .2178145
+{txt}{space 3}47 vs 12  {c |}{col 14}{res}{space 2}-.0859045{col 26}{space 2} .0404103{col 37}{space 1}   -2.13{col 46}{space 3}0.457{col 54}{space 4}-.2118689{col 67}{space 3} .0400598
+{txt}{space 3}22 vs 13  {c |}{col 14}{res}{space 2} .2166003{col 26}{space 2} .0343685{col 37}{space 1}    6.30{col 46}{space 3}0.000{col 54}{space 4} .1094692{col 67}{space 3} .3237315
+{txt}{space 3}28 vs 13  {c |}{col 14}{res}{space 2} .1724281{col 26}{space 2} .0376405{col 37}{space 1}    4.58{col 46}{space 3}0.000{col 54}{space 4} .0550979{col 67}{space 3} .2897584
+{txt}{space 3}37 vs 13  {c |}{col 14}{res}{space 2} .1196121{col 26}{space 2} .0280986{col 37}{space 1}    4.26{col 46}{space 3}0.001{col 54}{space 4} .0320251{col 67}{space 3}  .207199
+{txt}{space 3}45 vs 13  {c |}{col 14}{res}{space 2} .0892006{col 26}{space 2} .0486196{col 37}{space 1}    1.83{col 46}{space 3}0.659{col 54}{space 4}-.0623531{col 67}{space 3} .2407542
+{txt}{space 3}47 vs 13  {c |}{col 14}{res}{space 2}-.0420532{col 26}{space 2} .0305884{col 37}{space 1}   -1.37{col 46}{space 3}0.907{col 54}{space 4}-.1374014{col 67}{space 3}  .053295
+{txt}{space 3}28 vs 22  {c |}{col 14}{res}{space 2}-.0441722{col 26}{space 2} .0437157{col 37}{space 1}   -1.01{col 46}{space 3}0.985{col 54}{space 4}-.1804398{col 67}{space 3} .0920954
+{txt}{space 3}37 vs 22  {c |}{col 14}{res}{space 2}-.0969883{col 26}{space 2}   .03583{col 37}{space 1}   -2.71{col 46}{space 3}0.148{col 54}{space 4} -.208675{col 67}{space 3} .0146985
+{txt}{space 3}45 vs 22  {c |}{col 14}{res}{space 2}-.1273998{col 26}{space 2} .0534614{col 37}{space 1}   -2.38{col 46}{space 3}0.296{col 54}{space 4} -.294046{col 67}{space 3} .0392465
+{txt}{space 3}47 vs 22  {c |}{col 14}{res}{space 2}-.2586536{col 26}{space 2} .0378142{col 37}{space 1}   -6.84{col 46}{space 3}0.000{col 54}{space 4}-.3765253{col 67}{space 3}-.1407818
+{txt}{space 3}37 vs 28  {c |}{col 14}{res}{space 2}-.0528161{col 26}{space 2} .0389795{col 37}{space 1}   -1.35{col 46}{space 3}0.914{col 54}{space 4}-.1743202{col 67}{space 3}  .068688
+{txt}{space 3}45 vs 28  {c |}{col 14}{res}{space 2}-.0832276{col 26}{space 2} .0556213{col 37}{space 1}   -1.50{col 46}{space 3}0.857{col 54}{space 4}-.2566066{col 67}{space 3} .0901515
+{txt}{space 3}47 vs 28  {c |}{col 14}{res}{space 2}-.2144814{col 26}{space 2} .0408108{col 37}{space 1}   -5.26{col 46}{space 3}0.000{col 54}{space 4} -.341694{col 67}{space 3}-.0872687
+{txt}{space 3}45 vs 37  {c |}{col 14}{res}{space 2}-.0304115{col 26}{space 2} .0496635{col 37}{space 1}   -0.61{col 46}{space 3}1.000{col 54}{space 4} -.185219{col 67}{space 3}  .124396
+{txt}{space 3}47 vs 37  {c |}{col 14}{res}{space 2}-.1616653{col 26}{space 2} .0322218{col 37}{space 1}   -5.02{col 46}{space 3}0.000{col 54}{space 4} -.262105{col 67}{space 3}-.0612256
+{txt}{space 3}47 vs 45  {c |}{col 14}{res}{space 2}-.1312538{col 26}{space 2} .0511134{col 37}{space 1}   -2.57{col 46}{space 3}0.203{col 54}{space 4}-.2905811{col 67}{space 3} .0280735
+{txt}{hline 13}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+
+{com}.  
+. save Full_Merge_with_DC_data.dta, replace
+{txt}file Full_Merge_with_DC_data.dta saved
+
+{com}.  
+. 
+. 
+. log close
+      {txt}name:  {res}<unnamed>
+       {txt}log:  {res}C:\Users\bobab\Desktop\annals_pub\DC_Data\KLAVERNS_tests.smcl
+  {txt}log type:  {res}smcl
+ {txt}closed on:  {res}14 Mar 2021, 12:08:43
+{txt}{.-}
+{smcl}
+{txt}{sf}{ul off}

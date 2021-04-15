@@ -1,0 +1,402 @@
+{smcl}
+{com}{sf}{ul off}{txt}{.-}
+      name:  {res}<unnamed>
+       {txt}log:  {res}C:\Users\bobab\Desktop\annals_pub\Analysis\First Submission Regressions\regressions_histblk_pop_even_65plus_non-hiswhite_working_pcotton.smcl
+  {txt}log type:  {res}smcl
+ {txt}opened on:  {res} 2 Nov 2020, 10:29:18
+{txt}
+{com}.         ********Violence, hist black, totpop,  evan, popt 65plus,  non-his white, working class, pcotton
+. *Just linear
+.                 reg Pcttrump  Nevents histblk totpop county_evan_adh PctPop65plus PcthhNonhispwhite PctWorkingclass pcotton
+
+{txt}      Source {c |}       SS           df       MS      Number of obs   ={res}       551
+{txt}{hline 13}{c +}{hline 34}   F(8, 542)       = {res}    29.28
+{txt}       Model {c |} {res} .931385285         8  .116423161   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res} 2.15500433       542  .003976023   {txt}R-squared       ={res}    0.3018
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.2915
+{txt}       Total {c |} {res} 3.08638962       550  .005611617   {txt}Root MSE        =   {res} .06306
+
+{txt}{hline 18}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}         Pcttrump{col 19}{c |}      Coef.{col 31}   Std. Err.{col 43}      t{col 51}   P>|t|{col 59}     [95% Con{col 72}f. Interval]
+{hline 18}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 10}Nevents {c |}{col 19}{res}{space 2} .0016745{col 31}{space 2} .0006932{col 42}{space 1}    2.42{col 51}{space 3}0.016{col 59}{space 4} .0003128{col 72}{space 3} .0030362
+{txt}{space 10}histblk {c |}{col 19}{res}{space 2}-.0223072{col 31}{space 2} .0201412{col 42}{space 1}   -1.11{col 51}{space 3}0.269{col 59}{space 4}-.0618716{col 72}{space 3} .0172572
+{txt}{space 11}totpop {c |}{col 19}{res}{space 2}-1.08e-07{col 31}{space 2} 5.16e-08{col 42}{space 1}   -2.10{col 51}{space 3}0.036{col 59}{space 4}-2.10e-07{col 72}{space 3}-6.97e-09
+{txt}{space 2}county_evan_adh {c |}{col 19}{res}{space 2}-3.64e-07{col 31}{space 2} 1.89e-07{col 42}{space 1}   -1.92{col 51}{space 3}0.055{col 59}{space 4}-7.35e-07{col 72}{space 3} 7.72e-09
+{txt}{space 5}PctPop65plus {c |}{col 19}{res}{space 2} .2644989{col 31}{space 2} .0716212{col 42}{space 1}    3.69{col 51}{space 3}0.000{col 59}{space 4} .1238098{col 72}{space 3}  .405188
+{txt}PcthhNonhispwhite {c |}{col 19}{res}{space 2}-.0923439{col 31}{space 2} .0263537{col 42}{space 1}   -3.50{col 51}{space 3}0.000{col 59}{space 4}-.1441118{col 72}{space 3} -.040576
+{txt}{space 2}PctWorkingclass {c |}{col 19}{res}{space 2} .2798804{col 31}{space 2} .0447593{col 42}{space 1}    6.25{col 51}{space 3}0.000{col 59}{space 4} .1919573{col 72}{space 3} .3678034
+{txt}{space 10}pcotton {c |}{col 19}{res}{space 2}-.0357704{col 31}{space 2} .0201666{col 42}{space 1}   -1.77{col 51}{space 3}0.077{col 59}{space 4}-.0753846{col 72}{space 3} .0038438
+{txt}{space 12}_cons {c |}{col 19}{res}{space 2} .4244562{col 31}{space 2} .0332645{col 42}{space 1}   12.76{col 51}{space 3}0.000{col 59}{space 4}  .359113{col 72}{space 3} .4897993
+{txt}{hline 18}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}{txt}
+{com}.                 reg Pcttrump  nevents_blk histblk totpop county_evan_adh PctPop65plus PcthhNonhispwhite PctWorkingclass pcotton
+
+{txt}      Source {c |}       SS           df       MS      Number of obs   ={res}       551
+{txt}{hline 13}{c +}{hline 34}   F(8, 542)       = {res}    30.40
+{txt}       Model {c |} {res} .955984371         8  .119498046   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res} 2.13040525       542  .003930637   {txt}R-squared       ={res}    0.3097
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.2996
+{txt}       Total {c |} {res} 3.08638962       550  .005611617   {txt}Root MSE        =   {res} .06269
+
+{txt}{hline 18}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}         Pcttrump{col 19}{c |}      Coef.{col 31}   Std. Err.{col 43}      t{col 51}   P>|t|{col 59}     [95% Con{col 72}f. Interval]
+{hline 18}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 6}nevents_blk {c |}{col 19}{res}{space 2} .0030956{col 31}{space 2} .0008877{col 42}{space 1}    3.49{col 51}{space 3}0.001{col 59}{space 4} .0013518{col 72}{space 3} .0048394
+{txt}{space 10}histblk {c |}{col 19}{res}{space 2}-.0244346{col 31}{space 2}  .019976{col 42}{space 1}   -1.22{col 51}{space 3}0.222{col 59}{space 4}-.0636746{col 72}{space 3} .0148053
+{txt}{space 11}totpop {c |}{col 19}{res}{space 2}-1.12e-07{col 31}{space 2} 5.09e-08{col 42}{space 1}   -2.20{col 51}{space 3}0.028{col 59}{space 4}-2.12e-07{col 72}{space 3}-1.21e-08
+{txt}{space 2}county_evan_adh {c |}{col 19}{res}{space 2}-3.24e-07{col 31}{space 2} 1.79e-07{col 42}{space 1}   -1.81{col 51}{space 3}0.071{col 59}{space 4}-6.75e-07{col 72}{space 3} 2.79e-08
+{txt}{space 5}PctPop65plus {c |}{col 19}{res}{space 2}   .26847{col 31}{space 2} .0712184{col 42}{space 1}    3.77{col 51}{space 3}0.000{col 59}{space 4} .1285721{col 72}{space 3} .4083678
+{txt}PcthhNonhispwhite {c |}{col 19}{res}{space 2}-.0977383{col 31}{space 2} .0261556{col 42}{space 1}   -3.74{col 51}{space 3}0.000{col 59}{space 4}-.1491171{col 72}{space 3}-.0463595
+{txt}{space 2}PctWorkingclass {c |}{col 19}{res}{space 2} .2783267{col 31}{space 2} .0445013{col 42}{space 1}    6.25{col 51}{space 3}0.000{col 59}{space 4} .1909106{col 72}{space 3} .3657428
+{txt}{space 10}pcotton {c |}{col 19}{res}{space 2}-.0455114{col 31}{space 2} .0203957{col 42}{space 1}   -2.23{col 51}{space 3}0.026{col 59}{space 4}-.0855756{col 72}{space 3}-.0054471
+{txt}{space 12}_cons {c |}{col 19}{res}{space 2} .4290378{col 31}{space 2} .0330076{col 42}{space 1}   13.00{col 51}{space 3}0.000{col 59}{space 4} .3641994{col 72}{space 3} .4938763
+{txt}{hline 18}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}{txt}
+{com}.                 reg Pcttrump  Naverted histblk totpop county_evan_adh PctPop65plus PcthhNonhispwhite PctWorkingclass pcotton
+
+{txt}      Source {c |}       SS           df       MS      Number of obs   ={res}       551
+{txt}{hline 13}{c +}{hline 34}   F(8, 542)       = {res}    28.31
+{txt}       Model {c |} {res} .909516372         8  .113689546   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res} 2.17687325       542  .004016371   {txt}R-squared       ={res}    0.2947
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.2843
+{txt}       Total {c |} {res} 3.08638962       550  .005611617   {txt}Root MSE        =   {res} .06337
+
+{txt}{hline 18}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}         Pcttrump{col 19}{c |}      Coef.{col 31}   Std. Err.{col 43}      t{col 51}   P>|t|{col 59}     [95% Con{col 72}f. Interval]
+{hline 18}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 9}Naverted {c |}{col 19}{res}{space 2}-.0008391{col 31}{space 2} .0014576{col 42}{space 1}   -0.58{col 51}{space 3}0.565{col 59}{space 4}-.0037022{col 72}{space 3} .0020241
+{txt}{space 10}histblk {c |}{col 19}{res}{space 2}-.0135482{col 31}{space 2} .0200982{col 42}{space 1}   -0.67{col 51}{space 3}0.501{col 59}{space 4}-.0530281{col 72}{space 3} .0259317
+{txt}{space 11}totpop {c |}{col 19}{res}{space 2}-1.33e-07{col 31}{space 2} 5.21e-08{col 42}{space 1}   -2.55{col 51}{space 3}0.011{col 59}{space 4}-2.35e-07{col 72}{space 3}-3.05e-08
+{txt}{space 2}county_evan_adh {c |}{col 19}{res}{space 2}-1.50e-07{col 31}{space 2} 1.96e-07{col 42}{space 1}   -0.76{col 51}{space 3}0.446{col 59}{space 4}-5.36e-07{col 72}{space 3} 2.36e-07
+{txt}{space 5}PctPop65plus {c |}{col 19}{res}{space 2} .2558613{col 31}{space 2} .0719201{col 42}{space 1}    3.56{col 51}{space 3}0.000{col 59}{space 4} .1145849{col 72}{space 3} .3971376
+{txt}PcthhNonhispwhite {c |}{col 19}{res}{space 2} -.098667{col 31}{space 2}  .026755{col 42}{space 1}   -3.69{col 51}{space 3}0.000{col 59}{space 4}-.1512232{col 72}{space 3}-.0461108
+{txt}{space 2}PctWorkingclass {c |}{col 19}{res}{space 2} .2781633{col 31}{space 2} .0449985{col 42}{space 1}    6.18{col 51}{space 3}0.000{col 59}{space 4} .1897705{col 72}{space 3} .3665561
+{txt}{space 10}pcotton {c |}{col 19}{res}{space 2}-.0224966{col 31}{space 2} .0195494{col 42}{space 1}   -1.15{col 51}{space 3}0.250{col 59}{space 4}-.0608985{col 72}{space 3} .0159052
+{txt}{space 12}_cons {c |}{col 19}{res}{space 2} .4319807{col 31}{space 2} .0336284{col 42}{space 1}   12.85{col 51}{space 3}0.000{col 59}{space 4} .3659229{col 72}{space 3} .4980386
+{txt}{hline 18}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}{txt}
+{com}.                 reg Pcttrump  lynchratio histblk totpop county_evan_adh PctPop65plus PcthhNonhispwhite PctWorkingclass pcotton
+
+{txt}      Source {c |}       SS           df       MS      Number of obs   ={res}       551
+{txt}{hline 13}{c +}{hline 34}   F(8, 542)       = {res}    30.78
+{txt}       Model {c |} {res} .964116825         8  .120514603   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res} 2.12227279       542  .003915632   {txt}R-squared       ={res}    0.3124
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.3022
+{txt}       Total {c |} {res} 3.08638962       550  .005611617   {txt}Root MSE        =   {res} .06258
+
+{txt}{hline 18}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}         Pcttrump{col 19}{c |}      Coef.{col 31}   Std. Err.{col 43}      t{col 51}   P>|t|{col 59}     [95% Con{col 72}f. Interval]
+{hline 18}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 7}lynchratio {c |}{col 19}{res}{space 2} .0299333{col 31}{space 2}   .00792{col 42}{space 1}    3.78{col 51}{space 3}0.000{col 59}{space 4} .0143755{col 72}{space 3}  .045491
+{txt}{space 10}histblk {c |}{col 19}{res}{space 2}-.0186849{col 31}{space 2} .0197708{col 42}{space 1}   -0.95{col 51}{space 3}0.345{col 59}{space 4}-.0575218{col 72}{space 3}  .020152
+{txt}{space 11}totpop {c |}{col 19}{res}{space 2}-1.27e-07{col 31}{space 2} 5.06e-08{col 42}{space 1}   -2.51{col 51}{space 3}0.012{col 59}{space 4}-2.26e-07{col 72}{space 3}-2.75e-08
+{txt}{space 2}county_evan_adh {c |}{col 19}{res}{space 2}-1.72e-07{col 31}{space 2} 1.75e-07{col 42}{space 1}   -0.98{col 51}{space 3}0.328{col 59}{space 4}-5.16e-07{col 72}{space 3} 1.72e-07
+{txt}{space 5}PctPop65plus {c |}{col 19}{res}{space 2} .2913438{col 31}{space 2} .0715937{col 42}{space 1}    4.07{col 51}{space 3}0.000{col 59}{space 4} .1507087{col 72}{space 3}  .431979
+{txt}PcthhNonhispwhite {c |}{col 19}{res}{space 2}-.1028169{col 31}{space 2} .0261593{col 42}{space 1}   -3.93{col 51}{space 3}0.000{col 59}{space 4} -.154203{col 72}{space 3}-.0514308
+{txt}{space 2}PctWorkingclass {c |}{col 19}{res}{space 2} .2679709{col 31}{space 2} .0445088{col 42}{space 1}    6.02{col 51}{space 3}0.000{col 59}{space 4}   .18054{col 72}{space 3} .3554018
+{txt}{space 10}pcotton {c |}{col 19}{res}{space 2}-.0410462{col 31}{space 2} .0198868{col 42}{space 1}   -2.06{col 51}{space 3}0.039{col 59}{space 4}-.0801109{col 72}{space 3}-.0019815
+{txt}{space 12}_cons {c |}{col 19}{res}{space 2} .4200161{col 31}{space 2} .0330409{col 42}{space 1}   12.71{col 51}{space 3}0.000{col 59}{space 4} .3551122{col 72}{space 3}   .48492
+{txt}{hline 18}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}{txt}
+{com}. 
+.         
+. *Linear spline
+.                 reg Pcttrump  all_events0  all_events1 histblk totpop county_evan_adh PctPop65plus PcthhNonhispwhite PctWorkingclass pcotton
+
+{txt}      Source {c |}       SS           df       MS      Number of obs   ={res}       551
+{txt}{hline 13}{c +}{hline 34}   F(9, 541)       = {res}    26.05
+{txt}       Model {c |} {res} .933106921         9  .103678547   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res}  2.1532827       541   .00398019   {txt}R-squared       ={res}    0.3023
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.2907
+{txt}       Total {c |} {res} 3.08638962       550  .005611617   {txt}Root MSE        =   {res} .06309
+
+{txt}{hline 18}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}         Pcttrump{col 19}{c |}      Coef.{col 31}   Std. Err.{col 43}      t{col 51}   P>|t|{col 59}     [95% Con{col 72}f. Interval]
+{hline 18}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 6}all_events0 {c |}{col 19}{res}{space 2} .0075777{col 31}{space 2} .0090024{col 42}{space 1}    0.84{col 51}{space 3}0.400{col 59}{space 4}-.0101062{col 72}{space 3} .0252615
+{txt}{space 6}all_events1 {c |}{col 19}{res}{space 2} .0015737{col 31}{space 2} .0007103{col 42}{space 1}    2.22{col 51}{space 3}0.027{col 59}{space 4} .0001784{col 72}{space 3}  .002969
+{txt}{space 10}histblk {c |}{col 19}{res}{space 2}-.0242084{col 31}{space 2}  .020358{col 42}{space 1}   -1.19{col 51}{space 3}0.235{col 59}{space 4}-.0641989{col 72}{space 3} .0157821
+{txt}{space 11}totpop {c |}{col 19}{res}{space 2}-1.10e-07{col 31}{space 2} 5.17e-08{col 42}{space 1}   -2.13{col 51}{space 3}0.034{col 59}{space 4}-2.12e-07{col 72}{space 3}-8.53e-09
+{txt}{space 2}county_evan_adh {c |}{col 19}{res}{space 2}-3.59e-07{col 31}{space 2} 1.89e-07{col 42}{space 1}   -1.90{col 51}{space 3}0.058{col 59}{space 4}-7.31e-07{col 72}{space 3} 1.26e-08
+{txt}{space 5}PctPop65plus {c |}{col 19}{res}{space 2} .2733262{col 31}{space 2} .0729048{col 42}{space 1}    3.75{col 51}{space 3}0.000{col 59}{space 4}  .130115{col 72}{space 3} .4165373
+{txt}PcthhNonhispwhite {c |}{col 19}{res}{space 2}-.0929401{col 31}{space 2} .0263831{col 42}{space 1}   -3.52{col 51}{space 3}0.000{col 59}{space 4} -.144766{col 72}{space 3}-.0411142
+{txt}{space 2}PctWorkingclass {c |}{col 19}{res}{space 2} .2762071{col 31}{space 2} .0451297{col 42}{space 1}    6.12{col 51}{space 3}0.000{col 59}{space 4} .1875561{col 72}{space 3}  .364858
+{txt}{space 10}pcotton {c |}{col 19}{res}{space 2}-.0369029{col 31}{space 2} .0202505{col 42}{space 1}   -1.82{col 51}{space 3}0.069{col 59}{space 4}-.0766821{col 72}{space 3} .0028763
+{txt}{space 12}_cons {c |}{col 19}{res}{space 2} .4205672{col 31}{space 2} .0338031{col 42}{space 1}   12.44{col 51}{space 3}0.000{col 59}{space 4} .3541657{col 72}{space 3} .4869687
+{txt}{hline 18}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}{txt}
+{com}.                 reg Pcttrump  Averted0 Averted1 histblk totpop county_evan_adh PctPop65plus PcthhNonhispwhite PctWorkingclass pcotton
+
+{txt}      Source {c |}       SS           df       MS      Number of obs   ={res}       551
+{txt}{hline 13}{c +}{hline 34}   F(9, 541)       = {res}    25.22
+{txt}       Model {c |} {res} .912224086         9  .101358232   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res} 2.17416553       541   .00401879   {txt}R-squared       ={res}    0.2956
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.2838
+{txt}       Total {c |} {res} 3.08638962       550  .005611617   {txt}Root MSE        =   {res} .06339
+
+{txt}{hline 18}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}         Pcttrump{col 19}{c |}      Coef.{col 31}   Std. Err.{col 43}      t{col 51}   P>|t|{col 59}     [95% Con{col 72}f. Interval]
+{hline 18}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 9}Averted0 {c |}{col 19}{res}{space 2}-.0063663{col 31}{space 2} .0068897{col 42}{space 1}   -0.92{col 51}{space 3}0.356{col 59}{space 4}-.0199002{col 72}{space 3} .0071676
+{txt}{space 9}Averted1 {c |}{col 19}{res}{space 2} -.000226{col 31}{space 2} .0016382{col 42}{space 1}   -0.14{col 51}{space 3}0.890{col 59}{space 4}-.0034439{col 72}{space 3}  .002992
+{txt}{space 10}histblk {c |}{col 19}{res}{space 2}   -.0112{col 31}{space 2} .0203068{col 42}{space 1}   -0.55{col 51}{space 3}0.581{col 59}{space 4}-.0510898{col 72}{space 3} .0286898
+{txt}{space 11}totpop {c |}{col 19}{res}{space 2}-1.30e-07{col 31}{space 2} 5.22e-08{col 42}{space 1}   -2.48{col 51}{space 3}0.013{col 59}{space 4}-2.32e-07{col 72}{space 3}-2.70e-08
+{txt}{space 2}county_evan_adh {c |}{col 19}{res}{space 2}-1.66e-07{col 31}{space 2} 1.98e-07{col 42}{space 1}   -0.84{col 51}{space 3}0.401{col 59}{space 4}-5.54e-07{col 72}{space 3} 2.22e-07
+{txt}{space 5}PctPop65plus {c |}{col 19}{res}{space 2} .2491296{col 31}{space 2} .0724077{col 42}{space 1}    3.44{col 51}{space 3}0.001{col 59}{space 4} .1068948{col 72}{space 3} .3913643
+{txt}PcthhNonhispwhite {c |}{col 19}{res}{space 2}-.0981093{col 31}{space 2} .0267717{col 42}{space 1}   -3.66{col 51}{space 3}0.000{col 59}{space 4}-.1506985{col 72}{space 3}-.0455202
+{txt}{space 2}PctWorkingclass {c |}{col 19}{res}{space 2} .2808956{col 31}{space 2}  .045135{col 42}{space 1}    6.22{col 51}{space 3}0.000{col 59}{space 4} .1922343{col 72}{space 3} .3695568
+{txt}{space 10}pcotton {c |}{col 19}{res}{space 2}-.0212831{col 31}{space 2} .0196111{col 42}{space 1}   -1.09{col 51}{space 3}0.278{col 59}{space 4}-.0598063{col 72}{space 3} .0172401
+{txt}{space 12}_cons {c |}{col 19}{res}{space 2} .4340003{col 31}{space 2} .0337283{col 42}{space 1}   12.87{col 51}{space 3}0.000{col 59}{space 4} .3677457{col 72}{space 3} .5002549
+{txt}{hline 18}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}{txt}
+{com}.                 reg Pcttrump  Lynch0 Lynch1 histblk totpop county_evan_adh PctPop65plus PcthhNonhispwhite PctWorkingclass pcotton
+
+{txt}      Source {c |}       SS           df       MS      Number of obs   ={res}       551
+{txt}{hline 13}{c +}{hline 34}   F(9, 541)       = {res}    28.27
+{txt}       Model {c |} {res} .987138833         9  .109682093   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res} 2.09925078       541  .003880316   {txt}R-squared       ={res}    0.3198
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.3085
+{txt}       Total {c |} {res} 3.08638962       550  .005611617   {txt}Root MSE        =   {res} .06229
+
+{txt}{hline 18}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}         Pcttrump{col 19}{c |}      Coef.{col 31}   Std. Err.{col 43}      t{col 51}   P>|t|{col 59}     [95% Con{col 72}f. Interval]
+{hline 18}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 11}Lynch0 {c |}{col 19}{res}{space 2} .0236441{col 31}{space 2} .0073054{col 42}{space 1}    3.24{col 51}{space 3}0.001{col 59}{space 4} .0092937{col 72}{space 3} .0379944
+{txt}{space 11}Lynch1 {c |}{col 19}{res}{space 2} .0021958{col 31}{space 2} .0009374{col 42}{space 1}    2.34{col 51}{space 3}0.020{col 59}{space 4} .0003544{col 72}{space 3} .0040373
+{txt}{space 10}histblk {c |}{col 19}{res}{space 2}-.0279422{col 31}{space 2} .0198863{col 42}{space 1}   -1.41{col 51}{space 3}0.161{col 59}{space 4}-.0670061{col 72}{space 3} .0111217
+{txt}{space 11}totpop {c |}{col 19}{res}{space 2}-1.10e-07{col 31}{space 2} 5.05e-08{col 42}{space 1}   -2.17{col 51}{space 3}0.030{col 59}{space 4}-2.09e-07{col 72}{space 3}-1.05e-08
+{txt}{space 2}county_evan_adh {c |}{col 19}{res}{space 2}-3.34e-07{col 31}{space 2} 1.78e-07{col 42}{space 1}   -1.88{col 51}{space 3}0.061{col 59}{space 4}-6.83e-07{col 72}{space 3} 1.56e-08
+{txt}{space 5}PctPop65plus {c |}{col 19}{res}{space 2}  .304076{col 31}{space 2} .0718681{col 42}{space 1}    4.23{col 51}{space 3}0.000{col 59}{space 4} .1629013{col 72}{space 3} .4452508
+{txt}PcthhNonhispwhite {c |}{col 19}{res}{space 2} -.096686{col 31}{space 2} .0259903{col 42}{space 1}   -3.72{col 51}{space 3}0.000{col 59}{space 4}-.1477403{col 72}{space 3}-.0456318
+{txt}{space 2}PctWorkingclass {c |}{col 19}{res}{space 2} .2675468{col 31}{space 2} .0443789{col 42}{space 1}    6.03{col 51}{space 3}0.000{col 59}{space 4} .1803709{col 72}{space 3} .3547228
+{txt}{space 10}pcotton {c |}{col 19}{res}{space 2}-.0517484{col 31}{space 2} .0203839{col 42}{space 1}   -2.54{col 51}{space 3}0.011{col 59}{space 4}-.0917896{col 72}{space 3}-.0117071
+{txt}{space 12}_cons {c |}{col 19}{res}{space 2} .4140066{col 31}{space 2} .0332219{col 42}{space 1}   12.46{col 51}{space 3}0.000{col 59}{space 4} .3487469{col 72}{space 3} .4792663
+{txt}{hline 18}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}{txt}
+{com}.                 reg Pcttrump  Lynchratio0  Lynchratio1 histblk totpop county_evan_adh PctPop65plus PcthhNonhispwhite PctWorkingclass pcotton
+
+{txt}      Source {c |}       SS           df       MS      Number of obs   ={res}       479
+{txt}{hline 13}{c +}{hline 34}   F(9, 469)       = {res}    26.16
+{txt}       Model {c |} {res} .934583886         9  .103842654   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res} 1.86173202       469  .003969578   {txt}R-squared       ={res}    0.3342
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.3214
+{txt}       Total {c |} {res} 2.79631591       478  .005850033   {txt}Root MSE        =   {res}   .063
+
+{txt}{hline 18}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}         Pcttrump{col 19}{c |}      Coef.{col 31}   Std. Err.{col 43}      t{col 51}   P>|t|{col 59}     [95% Con{col 72}f. Interval]
+{hline 18}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 6}Lynchratio0 {c |}{col 19}{res}{space 2} 1.913435{col 31}{space 2} 1.241206{col 42}{space 1}    1.54{col 51}{space 3}0.124{col 59}{space 4}-.5255782{col 72}{space 3} 4.352448
+{txt}{space 6}Lynchratio1 {c |}{col 19}{res}{space 2} .0244806{col 31}{space 2} .0125694{col 42}{space 1}    1.95{col 51}{space 3}0.052{col 59}{space 4}-.0002186{col 72}{space 3} .0491799
+{txt}{space 10}histblk {c |}{col 19}{res}{space 2}-.0248502{col 31}{space 2} .0215654{col 42}{space 1}   -1.15{col 51}{space 3}0.250{col 59}{space 4} -.067227{col 72}{space 3} .0175266
+{txt}{space 11}totpop {c |}{col 19}{res}{space 2}-1.28e-07{col 31}{space 2} 5.20e-08{col 42}{space 1}   -2.47{col 51}{space 3}0.014{col 59}{space 4}-2.30e-07{col 72}{space 3}-2.61e-08
+{txt}{space 2}county_evan_adh {c |}{col 19}{res}{space 2}-1.55e-07{col 31}{space 2} 1.82e-07{col 42}{space 1}   -0.85{col 51}{space 3}0.394{col 59}{space 4}-5.12e-07{col 72}{space 3} 2.02e-07
+{txt}{space 5}PctPop65plus {c |}{col 19}{res}{space 2} .3188598{col 31}{space 2} .0859214{col 42}{space 1}    3.71{col 51}{space 3}0.000{col 59}{space 4} .1500213{col 72}{space 3} .4876982
+{txt}PcthhNonhispwhite {c |}{col 19}{res}{space 2}-.1118334{col 31}{space 2} .0273122{col 42}{space 1}   -4.09{col 51}{space 3}0.000{col 59}{space 4}-.1655029{col 72}{space 3}-.0581638
+{txt}{space 2}PctWorkingclass {c |}{col 19}{res}{space 2} .2650899{col 31}{space 2}   .04757{col 42}{space 1}    5.57{col 51}{space 3}0.000{col 59}{space 4} .1716131{col 72}{space 3} .3585666
+{txt}{space 10}pcotton {c |}{col 19}{res}{space 2}-.0422048{col 31}{space 2} .0209287{col 42}{space 1}   -2.02{col 51}{space 3}0.044{col 59}{space 4}-.0833305{col 72}{space 3}-.0010791
+{txt}{space 12}_cons {c |}{col 19}{res}{space 2} .4102614{col 31}{space 2}   .03633{col 42}{space 1}   11.29{col 51}{space 3}0.000{col 59}{space 4} .3388717{col 72}{space 3}  .481651
+{txt}{hline 18}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}{txt}
+{com}. *Logged
+.                 reg Pcttrump  Neventsln histblk totpop county_evan_adh PctPop65plus PcthhNonhispwhite PctWorkingclass pcotton
+
+{txt}      Source {c |}       SS           df       MS      Number of obs   ={res}       551
+{txt}{hline 13}{c +}{hline 34}   F(8, 542)       = {res}    29.06
+{txt}       Model {c |} {res} .926450881         8   .11580636   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res} 2.15993874       542  .003985127   {txt}R-squared       ={res}    0.3002
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.2898
+{txt}       Total {c |} {res} 3.08638962       550  .005611617   {txt}Root MSE        =   {res} .06313
+
+{txt}{hline 18}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}         Pcttrump{col 19}{c |}      Coef.{col 31}   Std. Err.{col 43}      t{col 51}   P>|t|{col 59}     [95% Con{col 72}f. Interval]
+{hline 18}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 8}Neventsln {c |}{col 19}{res}{space 2} .0093129{col 31}{space 2}   .00435{col 42}{space 1}    2.14{col 51}{space 3}0.033{col 59}{space 4} .0007679{col 72}{space 3} .0178578
+{txt}{space 10}histblk {c |}{col 19}{res}{space 2}-.0236664{col 31}{space 2} .0203513{col 42}{space 1}   -1.16{col 51}{space 3}0.245{col 59}{space 4}-.0636435{col 72}{space 3} .0163106
+{txt}{space 11}totpop {c |}{col 19}{res}{space 2}-1.18e-07{col 31}{space 2} 5.12e-08{col 42}{space 1}   -2.31{col 51}{space 3}0.021{col 59}{space 4}-2.19e-07{col 72}{space 3}-1.77e-08
+{txt}{space 2}county_evan_adh {c |}{col 19}{res}{space 2}-2.97e-07{col 31}{space 2} 1.82e-07{col 42}{space 1}   -1.63{col 51}{space 3}0.104{col 59}{space 4}-6.55e-07{col 72}{space 3} 6.13e-08
+{txt}{space 5}PctPop65plus {c |}{col 19}{res}{space 2} .2828746{col 31}{space 2} .0726721{col 42}{space 1}    3.89{col 51}{space 3}0.000{col 59}{space 4} .1401212{col 72}{space 3} .4256281
+{txt}PcthhNonhispwhite {c |}{col 19}{res}{space 2}-.0942052{col 31}{space 2} .0263511{col 42}{space 1}   -3.58{col 51}{space 3}0.000{col 59}{space 4} -.145968{col 72}{space 3}-.0424425
+{txt}{space 2}PctWorkingclass {c |}{col 19}{res}{space 2} .2733486{col 31}{space 2} .0448814{col 42}{space 1}    6.09{col 51}{space 3}0.000{col 59}{space 4} .1851858{col 72}{space 3} .3615115
+{txt}{space 10}pcotton {c |}{col 19}{res}{space 2} -.037087{col 31}{space 2} .0205718{col 42}{space 1}   -1.80{col 51}{space 3}0.072{col 59}{space 4}-.0774973{col 72}{space 3} .0033233
+{txt}{space 12}_cons {c |}{col 19}{res}{space 2} .4190116{col 31}{space 2} .0335987{col 42}{space 1}   12.47{col 51}{space 3}0.000{col 59}{space 4} .3530119{col 72}{space 3} .4850113
+{txt}{hline 18}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}{txt}
+{com}.                 reg Pcttrump  neventsln histblk totpop county_evan_adh PctPop65plus PcthhNonhispwhite PctWorkingclass pcotton
+
+{txt}      Source {c |}       SS           df       MS      Number of obs   ={res}       551
+{txt}{hline 13}{c +}{hline 34}   F(8, 542)       = {res}    30.87
+{txt}       Model {c |} {res} .966097755         8  .120762219   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res} 2.12029186       542  .003911978   {txt}R-squared       ={res}    0.3130
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.3029
+{txt}       Total {c |} {res} 3.08638962       550  .005611617   {txt}Root MSE        =   {res} .06255
+
+{txt}{hline 18}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}         Pcttrump{col 19}{c |}      Coef.{col 31}   Std. Err.{col 43}      t{col 51}   P>|t|{col 59}     [95% Con{col 72}f. Interval]
+{hline 18}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 8}neventsln {c |}{col 19}{res}{space 2} .0160249{col 31}{space 2} .0041649{col 42}{space 1}    3.85{col 51}{space 3}0.000{col 59}{space 4} .0078435{col 72}{space 3} .0242063
+{txt}{space 10}histblk {c |}{col 19}{res}{space 2}-.0262296{col 31}{space 2} .0199593{col 42}{space 1}   -1.31{col 51}{space 3}0.189{col 59}{space 4}-.0654366{col 72}{space 3} .0129774
+{txt}{space 11}totpop {c |}{col 19}{res}{space 2}-1.14e-07{col 31}{space 2} 5.07e-08{col 42}{space 1}   -2.24{col 51}{space 3}0.025{col 59}{space 4}-2.13e-07{col 72}{space 3}-1.40e-08
+{txt}{space 2}county_evan_adh {c |}{col 19}{res}{space 2}-3.07e-07{col 31}{space 2} 1.77e-07{col 42}{space 1}   -1.73{col 51}{space 3}0.084{col 59}{space 4}-6.54e-07{col 72}{space 3} 4.14e-08
+{txt}{space 5}PctPop65plus {c |}{col 19}{res}{space 2} .2964968{col 31}{space 2} .0717214{col 42}{space 1}    4.13{col 51}{space 3}0.000{col 59}{space 4} .1556108{col 72}{space 3} .4373829
+{txt}PcthhNonhispwhite {c |}{col 19}{res}{space 2}-.0977461{col 31}{space 2} .0260929{col 42}{space 1}   -3.75{col 51}{space 3}0.000{col 59}{space 4}-.1490017{col 72}{space 3}-.0464905
+{txt}{space 2}PctWorkingclass {c |}{col 19}{res}{space 2} .2705979{col 31}{space 2} .0444468{col 42}{space 1}    6.09{col 51}{space 3}0.000{col 59}{space 4} .1832889{col 72}{space 3} .3579069
+{txt}{space 10}pcotton {c |}{col 19}{res}{space 2}-.0520269{col 31}{space 2} .0207241{col 42}{space 1}   -2.51{col 51}{space 3}0.012{col 59}{space 4}-.0927362{col 72}{space 3}-.0113175
+{txt}{space 12}_cons {c |}{col 19}{res}{space 2} .4200265{col 31}{space 2}  .033022{col 42}{space 1}   12.72{col 51}{space 3}0.000{col 59}{space 4} .3551598{col 72}{space 3} .4848932
+{txt}{hline 18}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}{txt}
+{com}.                 reg Pcttrump  Navertedln histblk totpop county_evan_adh PctPop65plus PcthhNonhispwhite PctWorkingclass pcotton
+
+{txt}      Source {c |}       SS           df       MS      Number of obs   ={res}       551
+{txt}{hline 13}{c +}{hline 34}   F(8, 542)       = {res}    28.39
+{txt}       Model {c |} {res} .911303824         8  .113912978   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res} 2.17508579       542  .004013073   {txt}R-squared       ={res}    0.2953
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.2849
+{txt}       Total {c |} {res} 3.08638962       550  .005611617   {txt}Root MSE        =   {res} .06335
+
+{txt}{hline 18}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}         Pcttrump{col 19}{c |}      Coef.{col 31}   Std. Err.{col 43}      t{col 51}   P>|t|{col 59}     [95% Con{col 72}f. Interval]
+{hline 18}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 7}Navertedln {c |}{col 19}{res}{space 2}-.0042674{col 31}{space 2}  .004841{col 42}{space 1}   -0.88{col 51}{space 3}0.378{col 59}{space 4}-.0137768{col 72}{space 3}  .005242
+{txt}{space 10}histblk {c |}{col 19}{res}{space 2}-.0120882{col 31}{space 2} .0202084{col 42}{space 1}   -0.60{col 51}{space 3}0.550{col 59}{space 4}-.0517846{col 72}{space 3} .0276083
+{txt}{space 11}totpop {c |}{col 19}{res}{space 2}-1.32e-07{col 31}{space 2} 5.14e-08{col 42}{space 1}   -2.56{col 51}{space 3}0.011{col 59}{space 4}-2.33e-07{col 72}{space 3}-3.07e-08
+{txt}{space 2}county_evan_adh {c |}{col 19}{res}{space 2}-1.49e-07{col 31}{space 2} 1.86e-07{col 42}{space 1}   -0.80{col 51}{space 3}0.423{col 59}{space 4}-5.14e-07{col 72}{space 3} 2.16e-07
+{txt}{space 5}PctPop65plus {c |}{col 19}{res}{space 2} .2516238{col 31}{space 2} .0721006{col 42}{space 1}    3.49{col 51}{space 3}0.001{col 59}{space 4}  .109993{col 72}{space 3} .3932546
+{txt}PcthhNonhispwhite {c |}{col 19}{res}{space 2}-.0990155{col 31}{space 2} .0266047{col 42}{space 1}   -3.72{col 51}{space 3}0.000{col 59}{space 4}-.1512764{col 72}{space 3}-.0467547
+{txt}{space 2}PctWorkingclass {c |}{col 19}{res}{space 2} .2791393{col 31}{space 2} .0449667{col 42}{space 1}    6.21{col 51}{space 3}0.000{col 59}{space 4}  .190809{col 72}{space 3} .3674696
+{txt}{space 10}pcotton {c |}{col 19}{res}{space 2}-.0216979{col 31}{space 2}  .019575{col 42}{space 1}   -1.11{col 51}{space 3}0.268{col 59}{space 4}-.0601501{col 72}{space 3} .0167543
+{txt}{space 12}_cons {c |}{col 19}{res}{space 2} .4337784{col 31}{space 2} .0336925{col 42}{space 1}   12.87{col 51}{space 3}0.000{col 59}{space 4} .3675945{col 72}{space 3} .4999623
+{txt}{hline 18}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}{txt}
+{com}.                 reg Pcttrump  lynchratioln histblk totpop county_evan_adh PctPop65plus PcthhNonhispwhite PctWorkingclass pcotton
+
+{txt}      Source {c |}       SS           df       MS      Number of obs   ={res}       479
+{txt}{hline 13}{c +}{hline 34}   F(8, 470)       = {res}    28.94
+{txt}       Model {c |} {res} .922813311         8  .115351664   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res} 1.87350259       470  .003986176   {txt}R-squared       ={res}    0.3300
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.3186
+{txt}       Total {c |} {res} 2.79631591       478  .005850033   {txt}Root MSE        =   {res} .06314
+
+{txt}{hline 18}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}         Pcttrump{col 19}{c |}      Coef.{col 31}   Std. Err.{col 43}      t{col 51}   P>|t|{col 59}     [95% Con{col 72}f. Interval]
+{hline 18}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 5}lynchratioln {c |}{col 19}{res}{space 2} .0013353{col 31}{space 2} .0003413{col 42}{space 1}    3.91{col 51}{space 3}0.000{col 59}{space 4} .0006647{col 72}{space 3}  .002006
+{txt}{space 10}histblk {c |}{col 19}{res}{space 2}-.0264205{col 31}{space 2} .0215918{col 42}{space 1}   -1.22{col 51}{space 3}0.222{col 59}{space 4}-.0688489{col 72}{space 3}  .016008
+{txt}{space 11}totpop {c |}{col 19}{res}{space 2}-1.23e-07{col 31}{space 2} 5.20e-08{col 42}{space 1}   -2.36{col 51}{space 3}0.019{col 59}{space 4}-2.25e-07{col 72}{space 3}-2.04e-08
+{txt}{space 2}county_evan_adh {c |}{col 19}{res}{space 2}-2.10e-07{col 31}{space 2} 1.79e-07{col 42}{space 1}   -1.17{col 51}{space 3}0.242{col 59}{space 4}-5.63e-07{col 72}{space 3} 1.42e-07
+{txt}{space 5}PctPop65plus {c |}{col 19}{res}{space 2} .3235141{col 31}{space 2} .0860646{col 42}{space 1}    3.76{col 51}{space 3}0.000{col 59}{space 4}  .154395{col 72}{space 3} .4926331
+{txt}PcthhNonhispwhite {c |}{col 19}{res}{space 2}-.1058929{col 31}{space 2} .0271652{col 42}{space 1}   -3.90{col 51}{space 3}0.000{col 59}{space 4}-.1592731{col 72}{space 3}-.0525126
+{txt}{space 2}PctWorkingclass {c |}{col 19}{res}{space 2} .2672175{col 31}{space 2} .0476537{col 42}{space 1}    5.61{col 51}{space 3}0.000{col 59}{space 4} .1735767{col 72}{space 3} .3608582
+{txt}{space 10}pcotton {c |}{col 19}{res}{space 2}-.0366026{col 31}{space 2} .0207183{col 42}{space 1}   -1.77{col 51}{space 3}0.078{col 59}{space 4}-.0773146{col 72}{space 3} .0041093
+{txt}{space 12}_cons {c |}{col 19}{res}{space 2} .4410551{col 31}{space 2} .0349875{col 42}{space 1}   12.61{col 51}{space 3}0.000{col 59}{space 4} .3723039{col 72}{space 3} .5098063
+{txt}{hline 18}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}{txt}
+{com}. 
+. *Logged spline
+.                 reg Pcttrump  log_all_events0  log_all_events1 histblk totpop county_evan_adh PctPop65plus PcthhNonhispwhite PctWorkingclass pcotton
+
+{txt}      Source {c |}       SS           df       MS      Number of obs   ={res}       551
+{txt}{hline 13}{c +}{hline 34}   F(9, 541)       = {res}    25.79
+{txt}       Model {c |} {res} .926739244         9  .102971027   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res} 2.15965037       541   .00399196   {txt}R-squared       ={res}    0.3003
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.2886
+{txt}       Total {c |} {res} 3.08638962       550  .005611617   {txt}Root MSE        =   {res} .06318
+
+{txt}{hline 18}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}         Pcttrump{col 19}{c |}      Coef.{col 31}   Std. Err.{col 43}      t{col 51}   P>|t|{col 59}     [95% Con{col 72}f. Interval]
+{hline 18}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 2}log_all_events0 {c |}{col 19}{res}{space 2} .0058353{col 31}{space 2} .0136517{col 42}{space 1}    0.43{col 51}{space 3}0.669{col 59}{space 4}-.0209815{col 72}{space 3} .0326521
+{txt}{space 2}log_all_events1 {c |}{col 19}{res}{space 2} .0102152{col 31}{space 2} .0054978{col 42}{space 1}    1.86{col 51}{space 3}0.064{col 59}{space 4}-.0005844{col 72}{space 3} .0210148
+{txt}{space 10}histblk {c |}{col 19}{res}{space 2}-.0233571{col 31}{space 2} .0204012{col 42}{space 1}   -1.14{col 51}{space 3}0.253{col 59}{space 4}-.0634324{col 72}{space 3} .0167182
+{txt}{space 11}totpop {c |}{col 19}{res}{space 2}-1.17e-07{col 31}{space 2} 5.15e-08{col 42}{space 1}   -2.27{col 51}{space 3}0.023{col 59}{space 4}-2.18e-07{col 72}{space 3}-1.60e-08
+{txt}{space 2}county_evan_adh {c |}{col 19}{res}{space 2}-3.04e-07{col 31}{space 2} 1.84e-07{col 42}{space 1}   -1.65{col 51}{space 3}0.100{col 59}{space 4}-6.66e-07{col 72}{space 3} 5.82e-08
+{txt}{space 5}PctPop65plus {c |}{col 19}{res}{space 2} .2807373{col 31}{space 2} .0731678{col 42}{space 1}    3.84{col 51}{space 3}0.000{col 59}{space 4} .1370096{col 72}{space 3} .4244651
+{txt}PcthhNonhispwhite {c |}{col 19}{res}{space 2}-.0938157{col 31}{space 2} .0264135{col 42}{space 1}   -3.55{col 51}{space 3}0.000{col 59}{space 4}-.1457012{col 72}{space 3}-.0419301
+{txt}{space 2}PctWorkingclass {c |}{col 19}{res}{space 2} .2746095{col 31}{space 2} .0451642{col 42}{space 1}    6.08{col 51}{space 3}0.000{col 59}{space 4} .1858908{col 72}{space 3} .3633281
+{txt}{space 10}pcotton {c |}{col 19}{res}{space 2}-.0375024{col 31}{space 2} .0206474{col 42}{space 1}   -1.82{col 51}{space 3}0.070{col 59}{space 4}-.0780612{col 72}{space 3} .0030565
+{txt}{space 12}_cons {c |}{col 19}{res}{space 2} .4201223{col 31}{space 2} .0338805{col 42}{space 1}   12.40{col 51}{space 3}0.000{col 59}{space 4} .3535689{col 72}{space 3} .4866757
+{txt}{hline 18}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}{txt}
+{com}.                 reg Pcttrump  log_Averted0  log_Averted1 histblk totpop county_evan_adh PctPop65plus PcthhNonhispwhite PctWorkingclass pcotton
+
+{txt}      Source {c |}       SS           df       MS      Number of obs   ={res}       551
+{txt}{hline 13}{c +}{hline 34}   F(9, 541)       = {res}    25.23
+{txt}       Model {c |} {res} .912376762         9  .101375196   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res} 2.17401286       541  .004018508   {txt}R-squared       ={res}    0.2956
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.2839
+{txt}       Total {c |} {res} 3.08638962       550  .005611617   {txt}Root MSE        =   {res} .06339
+
+{txt}{hline 18}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}         Pcttrump{col 19}{c |}      Coef.{col 31}   Std. Err.{col 43}      t{col 51}   P>|t|{col 59}     [95% Con{col 72}f. Interval]
+{hline 18}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 5}log_Averted0 {c |}{col 19}{res}{space 2}-.0090724{col 31}{space 2} .0104851{col 42}{space 1}   -0.87{col 51}{space 3}0.387{col 59}{space 4}-.0296689{col 72}{space 3} .0115242
+{txt}{space 5}log_Averted1 {c |}{col 19}{res}{space 2}-.0011701{col 31}{space 2}  .007707{col 42}{space 1}   -0.15{col 51}{space 3}0.879{col 59}{space 4}-.0163094{col 72}{space 3} .0139692
+{txt}{space 10}histblk {c |}{col 19}{res}{space 2}-.0111712{col 31}{space 2} .0202998{col 42}{space 1}   -0.55{col 51}{space 3}0.582{col 59}{space 4}-.0510473{col 72}{space 3} .0287049
+{txt}{space 11}totpop {c |}{col 19}{res}{space 2}-1.29e-07{col 31}{space 2} 5.17e-08{col 42}{space 1}   -2.49{col 51}{space 3}0.013{col 59}{space 4}-2.31e-07{col 72}{space 3}-2.74e-08
+{txt}{space 2}county_evan_adh {c |}{col 19}{res}{space 2}-1.69e-07{col 31}{space 2} 1.90e-07{col 42}{space 1}   -0.89{col 51}{space 3}0.375{col 59}{space 4}-5.41e-07{col 72}{space 3} 2.04e-07
+{txt}{space 5}PctPop65plus {c |}{col 19}{res}{space 2} .2487921{col 31}{space 2} .0723572{col 42}{space 1}    3.44{col 51}{space 3}0.001{col 59}{space 4} .1066566{col 72}{space 3} .3909276
+{txt}PcthhNonhispwhite {c |}{col 19}{res}{space 2}-.0980749{col 31}{space 2} .0266848{col 42}{space 1}   -3.68{col 51}{space 3}0.000{col 59}{space 4}-.1504935{col 72}{space 3}-.0456564
+{txt}{space 2}PctWorkingclass {c |}{col 19}{res}{space 2} .2808438{col 31}{space 2} .0451178{col 42}{space 1}    6.22{col 51}{space 3}0.000{col 59}{space 4} .1922162{col 72}{space 3} .3694714
+{txt}{space 10}pcotton {c |}{col 19}{res}{space 2}-.0212269{col 31}{space 2} .0196095{col 42}{space 1}   -1.08{col 51}{space 3}0.280{col 59}{space 4}-.0597469{col 72}{space 3} .0172932
+{txt}{space 12}_cons {c |}{col 19}{res}{space 2} .4341279{col 31}{space 2} .0337221{col 42}{space 1}   12.87{col 51}{space 3}0.000{col 59}{space 4} .3678857{col 72}{space 3} .5003702
+{txt}{hline 18}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}{txt}
+{com}.                 reg Pcttrump  log_lynch0  log_lynch1 histblk totpop county_evan_adh PctPop65plus PcthhNonhispwhite PctWorkingclass pcotton
+
+{txt}      Source {c |}       SS           df       MS      Number of obs   ={res}       551
+{txt}{hline 13}{c +}{hline 34}   F(9, 541)       = {res}    27.79
+{txt}       Model {c |} {res} .975666323         9  .108407369   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res} 2.11072329       541  .003901522   {txt}R-squared       ={res}    0.3161
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.3047
+{txt}       Total {c |} {res} 3.08638962       550  .005611617   {txt}Root MSE        =   {res} .06246
+
+{txt}{hline 18}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}         Pcttrump{col 19}{c |}      Coef.{col 31}   Std. Err.{col 43}      t{col 51}   P>|t|{col 59}     [95% Con{col 72}f. Interval]
+{hline 18}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 7}log_lynch0 {c |}{col 19}{res}{space 2} .0321058{col 31}{space 2} .0110789{col 42}{space 1}    2.90{col 51}{space 3}0.004{col 59}{space 4} .0103429{col 72}{space 3} .0538687
+{txt}{space 7}log_lynch1 {c |}{col 19}{res}{space 2} .0098563{col 31}{space 2} .0057285{col 42}{space 1}    1.72{col 51}{space 3}0.086{col 59}{space 4}-.0013964{col 72}{space 3} .0211091
+{txt}{space 10}histblk {c |}{col 19}{res}{space 2}-.0262699{col 31}{space 2} .0199326{col 42}{space 1}   -1.32{col 51}{space 3}0.188{col 59}{space 4}-.0654247{col 72}{space 3} .0128849
+{txt}{space 11}totpop {c |}{col 19}{res}{space 2}-1.14e-07{col 31}{space 2} 5.06e-08{col 42}{space 1}   -2.25{col 51}{space 3}0.025{col 59}{space 4}-2.13e-07{col 72}{space 3}-1.46e-08
+{txt}{space 2}county_evan_adh {c |}{col 19}{res}{space 2}-2.98e-07{col 31}{space 2} 1.77e-07{col 42}{space 1}   -1.69{col 51}{space 3}0.093{col 59}{space 4}-6.46e-07{col 72}{space 3} 4.94e-08
+{txt}{space 5}PctPop65plus {c |}{col 19}{res}{space 2} .3091297{col 31}{space 2} .0720784{col 42}{space 1}    4.29{col 51}{space 3}0.000{col 59}{space 4}  .167542{col 72}{space 3} .4507175
+{txt}PcthhNonhispwhite {c |}{col 19}{res}{space 2}-.0966667{col 31}{space 2} .0260671{col 42}{space 1}   -3.71{col 51}{space 3}0.000{col 59}{space 4}-.1478719{col 72}{space 3}-.0454615
+{txt}{space 2}PctWorkingclass {c |}{col 19}{res}{space 2} .2662363{col 31}{space 2} .0444746{col 42}{space 1}    5.99{col 51}{space 3}0.000{col 59}{space 4} .1788722{col 72}{space 3} .3536004
+{txt}{space 10}pcotton {c |}{col 19}{res}{space 2}-.0498688{col 31}{space 2} .0207422{col 42}{space 1}   -2.40{col 51}{space 3}0.017{col 59}{space 4}-.0906139{col 72}{space 3}-.0091237
+{txt}{space 12}_cons {c |}{col 19}{res}{space 2}  .412556{col 31}{space 2}  .033321{col 42}{space 1}   12.38{col 51}{space 3}0.000{col 59}{space 4} .3471016{col 72}{space 3} .4780105
+{txt}{hline 18}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}{txt}
+{com}.                 reg Pcttrump  log_lynchratio0  log_lynchratio1 histblk totpop county_evan_adh PctPop65plus PcthhNonhispwhite PctWorkingclass pcotton
+{txt}note: log_lynchratio0 omitted because of collinearity
+
+      Source {c |}       SS           df       MS      Number of obs   ={res}       479
+{txt}{hline 13}{c +}{hline 34}   F(8, 470)       = {res}    29.06
+{txt}       Model {c |} {res}  .92551349         8  .115689186   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res} 1.87080242       470  .003980431   {txt}R-squared       ={res}    0.3310
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.3196
+{txt}       Total {c |} {res} 2.79631591       478  .005850033   {txt}Root MSE        =   {res} .06309
+
+{txt}{hline 18}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}         Pcttrump{col 19}{c |}      Coef.{col 31}   Std. Err.{col 43}      t{col 51}   P>|t|{col 59}     [95% Con{col 72}f. Interval]
+{hline 18}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 2}log_lynchratio0 {c |}{col 19}{res}{space 2}        0{col 31}{txt}  (omitted)
+{space 2}log_lynchratio1 {c |}{col 19}{res}{space 2} .0372627{col 31}{space 2} .0093126{col 42}{space 1}    4.00{col 51}{space 3}0.000{col 59}{space 4} .0189633{col 72}{space 3} .0555621
+{txt}{space 10}histblk {c |}{col 19}{res}{space 2}-.0242399{col 31}{space 2} .0215911{col 42}{space 1}   -1.12{col 51}{space 3}0.262{col 59}{space 4} -.066667{col 72}{space 3} .0181871
+{txt}{space 11}totpop {c |}{col 19}{res}{space 2}-1.37e-07{col 31}{space 2} 5.17e-08{col 42}{space 1}   -2.64{col 51}{space 3}0.009{col 59}{space 4}-2.38e-07{col 72}{space 3}-3.49e-08
+{txt}{space 2}county_evan_adh {c |}{col 19}{res}{space 2}-1.06e-07{col 31}{space 2} 1.79e-07{col 42}{space 1}   -0.59{col 51}{space 3}0.553{col 59}{space 4}-4.58e-07{col 72}{space 3} 2.46e-07
+{txt}{space 5}PctPop65plus {c |}{col 19}{res}{space 2} .3089718{col 31}{space 2}  .085789{col 42}{space 1}    3.60{col 51}{space 3}0.000{col 59}{space 4} .1403943{col 72}{space 3} .4775493
+{txt}PcthhNonhispwhite {c |}{col 19}{res}{space 2}-.1162733{col 31}{space 2} .0271909{col 42}{space 1}   -4.28{col 51}{space 3}0.000{col 59}{space 4}-.1697042{col 72}{space 3}-.0628424
+{txt}{space 2}PctWorkingclass {c |}{col 19}{res}{space 2} .2636459{col 31}{space 2} .0476254{col 42}{space 1}    5.54{col 51}{space 3}0.000{col 59}{space 4} .1700609{col 72}{space 3}  .357231
+{txt}{space 10}pcotton {c |}{col 19}{res}{space 2}-.0427294{col 31}{space 2} .0209544{col 42}{space 1}   -2.04{col 51}{space 3}0.042{col 59}{space 4}-.0839054{col 72}{space 3}-.0015535
+{txt}{space 12}_cons {c |}{col 19}{res}{space 2}-.5798236{col 31}{space 2} .2575852{col 42}{space 1}   -2.25{col 51}{space 3}0.025{col 59}{space 4}-1.085985{col 72}{space 3}-.0736624
+{txt}{hline 18}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}{txt}
+{com}.         
+.                         
+.         log close
+      {txt}name:  {res}<unnamed>
+       {txt}log:  {res}C:\Users\bobab\Desktop\annals_pub\Analysis\First Submission Regressions\regressions_histblk_pop_even_65plus_non-hiswhite_working_pcotton.smcl
+  {txt}log type:  {res}smcl
+ {txt}closed on:  {res} 2 Nov 2020, 10:29:19
+{txt}{.-}
+{smcl}
+{txt}{sf}{ul off}

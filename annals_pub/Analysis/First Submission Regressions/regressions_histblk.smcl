@@ -1,0 +1,303 @@
+{smcl}
+{com}{sf}{ul off}{txt}{.-}
+      name:  {res}<unnamed>
+       {txt}log:  {res}C:\Users\bobab\Desktop\annals_pub\Analysis\First Submission Regressions\regressions_histblk.smcl
+  {txt}log type:  {res}smcl
+ {txt}opened on:  {res} 2 Nov 2020, 10:29:16
+{txt}
+{com}. ********Violence and hist black 
+. *Just linear
+.                 reg Pcttrump  Nevents histblk 
+
+{txt}      Source {c |}       SS           df       MS      Number of obs   ={res}       552
+{txt}{hline 13}{c +}{hline 34}   F(2, 549)       = {res}     2.38
+{txt}       Model {c |} {res} .026503563         2  .013251781   {txt}Prob > F        ={res}    0.0939
+{txt}    Residual {c |} {res} 3.06194464       549  .005577313   {txt}R-squared       ={res}    0.0086
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.0050
+{txt}       Total {c |} {res} 3.08844821       551  .005605169   {txt}Root MSE        =   {res} .07468
+
+{txt}{hline 13}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}    Pcttrump{col 14}{c |}      Coef.{col 26}   Std. Err.{col 38}      t{col 46}   P>|t|{col 54}     [95% Con{col 67}f. Interval]
+{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 5}Nevents {c |}{col 14}{res}{space 2}-.0012804{col 26}{space 2} .0006666{col 37}{space 1}   -1.92{col 46}{space 3}0.055{col 54}{space 4}-.0025897{col 67}{space 3}  .000029
+{txt}{space 5}histblk {c |}{col 14}{res}{space 2} .0247252{col 26}{space 2} .0147319{col 37}{space 1}    1.68{col 46}{space 3}0.094{col 54}{space 4}-.0042125{col 67}{space 3}  .053663
+{txt}{space 7}_cons {c |}{col 14}{res}{space 2} .4459267{col 26}{space 2} .0062183{col 37}{space 1}   71.71{col 46}{space 3}0.000{col 54}{space 4} .4337121{col 67}{space 3} .4581413
+{txt}{hline 13}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}{txt}
+{com}.                 reg Pcttrump  nevents_blk histblk 
+
+{txt}      Source {c |}       SS           df       MS      Number of obs   ={res}       552
+{txt}{hline 13}{c +}{hline 34}   F(2, 549)       = {res}     0.90
+{txt}       Model {c |} {res} .010142325         2  .005071163   {txt}Prob > F        ={res}    0.4054
+{txt}    Residual {c |} {res} 3.07830588       549  .005607115   {txt}R-squared       ={res}    0.0033
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}   -0.0003
+{txt}       Total {c |} {res} 3.08844821       551  .005605169   {txt}Root MSE        =   {res} .07488
+
+{txt}{hline 13}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}    Pcttrump{col 14}{c |}      Coef.{col 26}   Std. Err.{col 38}      t{col 46}   P>|t|{col 54}     [95% Con{col 67}f. Interval]
+{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 1}nevents_blk {c |}{col 14}{res}{space 2} .0008177{col 26}{space 2}  .000943{col 37}{space 1}    0.87{col 46}{space 3}0.386{col 54}{space 4}-.0010345{col 67}{space 3}   .00267
+{txt}{space 5}histblk {c |}{col 14}{res}{space 2} .0095623{col 26}{space 2} .0146358{col 37}{space 1}    0.65{col 46}{space 3}0.514{col 54}{space 4}-.0191868{col 67}{space 3} .0383113
+{txt}{space 7}_cons {c |}{col 14}{res}{space 2} .4428402{col 26}{space 2} .0061831{col 37}{space 1}   71.62{col 46}{space 3}0.000{col 54}{space 4} .4306947{col 67}{space 3} .4549857
+{txt}{hline 13}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}{txt}
+{com}.                 reg Pcttrump  Naverted histblk 
+
+{txt}      Source {c |}       SS           df       MS      Number of obs   ={res}       552
+{txt}{hline 13}{c +}{hline 34}   F(2, 549)       = {res}    14.17
+{txt}       Model {c |} {res} .151577421         2  .075788711   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res} 2.93687079       549  .005349491   {txt}R-squared       ={res}    0.0491
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.0456
+{txt}       Total {c |} {res} 3.08844821       551  .005605169   {txt}Root MSE        =   {res} .07314
+
+{txt}{hline 13}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}    Pcttrump{col 14}{c |}      Coef.{col 26}   Std. Err.{col 38}      t{col 46}   P>|t|{col 54}     [95% Con{col 67}f. Interval]
+{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 4}Naverted {c |}{col 14}{res}{space 2}-.0068611{col 26}{space 2} .0013149{col 37}{space 1}   -5.22{col 46}{space 3}0.000{col 54}{space 4} -.009444{col 67}{space 3}-.0042783
+{txt}{space 5}histblk {c |}{col 14}{res}{space 2} .0333924{col 26}{space 2} .0138689{col 37}{space 1}    2.41{col 46}{space 3}0.016{col 54}{space 4} .0061498{col 67}{space 3}  .060635
+{txt}{space 7}_cons {c |}{col 14}{res}{space 2} .4494447{col 26}{space 2} .0060787{col 37}{space 1}   73.94{col 46}{space 3}0.000{col 54}{space 4} .4375044{col 67}{space 3} .4613851
+{txt}{hline 13}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}{txt}
+{com}.                 reg Pcttrump  lynchratio histblk 
+
+{txt}      Source {c |}       SS           df       MS      Number of obs   ={res}       552
+{txt}{hline 13}{c +}{hline 34}   F(2, 549)       = {res}     9.46
+{txt}       Model {c |} {res} .102936156         2  .051468078   {txt}Prob > F        ={res}    0.0001
+{txt}    Residual {c |} {res} 2.98551205       549  .005438091   {txt}R-squared       ={res}    0.0333
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.0298
+{txt}       Total {c |} {res} 3.08844821       551  .005605169   {txt}Root MSE        =   {res} .07374
+
+{txt}{hline 13}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}    Pcttrump{col 14}{c |}      Coef.{col 26}   Std. Err.{col 38}      t{col 46}   P>|t|{col 54}     [95% Con{col 67}f. Interval]
+{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 2}lynchratio {c |}{col 14}{res}{space 2} .0370594{col 26}{space 2} .0087743{col 37}{space 1}    4.22{col 46}{space 3}0.000{col 54}{space 4} .0198241{col 67}{space 3} .0542947
+{txt}{space 5}histblk {c |}{col 14}{res}{space 2} .0041432{col 26}{space 2} .0136787{col 37}{space 1}    0.30{col 46}{space 3}0.762{col 54}{space 4}-.0227258{col 67}{space 3} .0310122
+{txt}{space 7}_cons {c |}{col 14}{res}{space 2}  .428478{col 26}{space 2} .0070105{col 37}{space 1}   61.12{col 46}{space 3}0.000{col 54}{space 4} .4147073{col 67}{space 3} .4422487
+{txt}{hline 13}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}{txt}
+{com}. 
+. *Linear spline
+.                 reg Pcttrump  all_events0  all_events1 histblk
+
+{txt}      Source {c |}       SS           df       MS      Number of obs   ={res}       552
+{txt}{hline 13}{c +}{hline 34}   F(3, 548)       = {res}     1.70
+{txt}       Model {c |} {res} .028430918         3  .009476973   {txt}Prob > F        ={res}    0.1666
+{txt}    Residual {c |} {res} 3.06001729       548  .005583973   {txt}R-squared       ={res}    0.0092
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.0038
+{txt}       Total {c |} {res} 3.08844821       551  .005605169   {txt}Root MSE        =   {res} .07473
+
+{txt}{hline 13}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}    Pcttrump{col 14}{c |}      Coef.{col 26}   Std. Err.{col 38}      t{col 46}   P>|t|{col 54}     [95% Con{col 67}f. Interval]
+{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 1}all_events0 {c |}{col 14}{res}{space 2} .0046955{col 26}{space 2} .0101935{col 37}{space 1}    0.46{col 46}{space 3}0.645{col 54}{space 4}-.0153277{col 67}{space 3} .0247187
+{txt}{space 1}all_events1 {c |}{col 14}{res}{space 2}-.0014085{col 26}{space 2} .0007017{col 37}{space 1}   -2.01{col 46}{space 3}0.045{col 54}{space 4}-.0027869{col 67}{space 3}-.0000301
+{txt}{space 5}histblk {c |}{col 14}{res}{space 2} .0228253{col 26}{space 2} .0150913{col 37}{space 1}    1.51{col 46}{space 3}0.131{col 54}{space 4}-.0068185{col 67}{space 3} .0524691
+{txt}{space 7}_cons {c |}{col 14}{res}{space 2} .4420454{col 26}{space 2} .0090752{col 37}{space 1}   48.71{col 46}{space 3}0.000{col 54}{space 4}  .424219{col 67}{space 3} .4598718
+{txt}{hline 13}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}{txt}
+{com}.                 reg Pcttrump  Averted0 Averted1 histblk
+
+{txt}      Source {c |}       SS           df       MS      Number of obs   ={res}       552
+{txt}{hline 13}{c +}{hline 34}   F(3, 548)       = {res}     9.44
+{txt}       Model {c |} {res} .151697811         3  .050565937   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res}  2.9367504       548  .005359034   {txt}R-squared       ={res}    0.0491
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.0439
+{txt}       Total {c |} {res} 3.08844821       551  .005605169   {txt}Root MSE        =   {res} .07321
+
+{txt}{hline 13}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}    Pcttrump{col 14}{c |}      Coef.{col 26}   Std. Err.{col 38}      t{col 46}   P>|t|{col 54}     [95% Con{col 67}f. Interval]
+{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 4}Averted0 {c |}{col 14}{res}{space 2}-.0080115{col 26}{space 2}  .007787{col 37}{space 1}   -1.03{col 46}{space 3}0.304{col 54}{space 4}-.0233075{col 67}{space 3} .0072846
+{txt}{space 4}Averted1 {c |}{col 14}{res}{space 2}-.0067439{col 26}{space 2}  .001531{col 37}{space 1}   -4.40{col 46}{space 3}0.000{col 54}{space 4}-.0097513{col 67}{space 3}-.0037365
+{txt}{space 5}histblk {c |}{col 14}{res}{space 2} .0339688{col 26}{space 2} .0144041{col 37}{space 1}    2.36{col 46}{space 3}0.019{col 54}{space 4} .0056748{col 67}{space 3} .0622628
+{txt}{space 7}_cons {c |}{col 14}{res}{space 2} .4498464{col 26}{space 2} .0066483{col 37}{space 1}   67.66{col 46}{space 3}0.000{col 54}{space 4} .4367871{col 67}{space 3} .4629058
+{txt}{hline 13}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}{txt}
+{com}.                 reg Pcttrump  Lynch0 Lynch1 histblk 
+
+{txt}      Source {c |}       SS           df       MS      Number of obs   ={res}       552
+{txt}{hline 13}{c +}{hline 34}   F(3, 548)       = {res}     2.22
+{txt}       Model {c |} {res}  .03713736         3   .01237912   {txt}Prob > F        ={res}    0.0845
+{txt}    Residual {c |} {res} 3.05131085       548  .005568085   {txt}R-squared       ={res}    0.0120
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.0066
+{txt}       Total {c |} {res} 3.08844821       551  .005605169   {txt}Root MSE        =   {res} .07462
+
+{txt}{hline 13}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}    Pcttrump{col 14}{c |}      Coef.{col 26}   Std. Err.{col 38}      t{col 46}   P>|t|{col 54}     [95% Con{col 67}f. Interval]
+{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 6}Lynch0 {c |}{col 14}{res}{space 2} .0190476{col 26}{space 2} .0083325{col 37}{space 1}    2.29{col 46}{space 3}0.023{col 54}{space 4} .0026801{col 67}{space 3} .0354151
+{txt}{space 6}Lynch1 {c |}{col 14}{res}{space 2}-.0001801{col 26}{space 2} .0010432{col 37}{space 1}   -0.17{col 46}{space 3}0.863{col 54}{space 4}-.0022293{col 67}{space 3} .0018692
+{txt}{space 5}histblk {c |}{col 14}{res}{space 2} .0042686{col 26}{space 2} .0147816{col 37}{space 1}    0.29{col 46}{space 3}0.773{col 54}{space 4} -.024767{col 67}{space 3} .0333042
+{txt}{space 7}_cons {c |}{col 14}{res}{space 2} .4335191{col 26}{space 2} .0074757{col 37}{space 1}   57.99{col 46}{space 3}0.000{col 54}{space 4} .4188346{col 67}{space 3} .4482036
+{txt}{hline 13}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}{txt}
+{com}.                 reg Pcttrump  Lynchratio0  Lynchratio1 histblk
+
+{txt}      Source {c |}       SS           df       MS      Number of obs   ={res}       479
+{txt}{hline 13}{c +}{hline 34}   F(3, 475)       = {res}     9.86
+{txt}       Model {c |} {res} .163895158         3  .054631719   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res} 2.63242075       475  .005541938   {txt}R-squared       ={res}    0.0586
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.0527
+{txt}       Total {c |} {res} 2.79631591       478  .005850033   {txt}Root MSE        =   {res} .07444
+
+{txt}{hline 13}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}    Pcttrump{col 14}{c |}      Coef.{col 26}   Std. Err.{col 38}      t{col 46}   P>|t|{col 54}     [95% Con{col 67}f. Interval]
+{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 1}Lynchratio0 {c |}{col 14}{res}{space 2}-.4081871{col 26}{space 2} 1.409367{col 37}{space 1}   -0.29{col 46}{space 3}0.772{col 54}{space 4}-3.177552{col 67}{space 3} 2.361178
+{txt}{space 1}Lynchratio1 {c |}{col 14}{res}{space 2} .0583807{col 26}{space 2} .0139132{col 37}{space 1}    4.20{col 46}{space 3}0.000{col 54}{space 4} .0310416{col 67}{space 3} .0857197
+{txt}{space 5}histblk {c |}{col 14}{res}{space 2} .0184524{col 26}{space 2} .0154612{col 37}{space 1}    1.19{col 46}{space 3}0.233{col 54}{space 4}-.0119283{col 67}{space 3} .0488332
+{txt}{space 7}_cons {c |}{col 14}{res}{space 2} .4108821{col 26}{space 2} .0112929{col 37}{space 1}   36.38{col 46}{space 3}0.000{col 54}{space 4}  .388692{col 67}{space 3} .4330723
+{txt}{hline 13}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}{txt}
+{com}. *Logged
+.                 reg Pcttrump  Neventsln histblk
+
+{txt}      Source {c |}       SS           df       MS      Number of obs   ={res}       552
+{txt}{hline 13}{c +}{hline 34}   F(2, 549)       = {res}     1.36
+{txt}       Model {c |} {res} .015260516         2  .007630258   {txt}Prob > F        ={res}    0.2567
+{txt}    Residual {c |} {res} 3.07318769       549  .005597792   {txt}R-squared       ={res}    0.0049
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.0013
+{txt}       Total {c |} {res} 3.08844821       551  .005605169   {txt}Root MSE        =   {res} .07482
+
+{txt}{hline 13}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}    Pcttrump{col 14}{c |}      Coef.{col 26}   Std. Err.{col 38}      t{col 46}   P>|t|{col 54}     [95% Con{col 67}f. Interval]
+{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 3}Neventsln {c |}{col 14}{res}{space 2}-.0054525{col 26}{space 2} .0042223{col 37}{space 1}   -1.29{col 46}{space 3}0.197{col 54}{space 4}-.0137463{col 67}{space 3} .0028413
+{txt}{space 5}histblk {c |}{col 14}{res}{space 2} .0231152{col 26}{space 2}  .015363{col 37}{space 1}    1.50{col 46}{space 3}0.133{col 54}{space 4}-.0070621{col 67}{space 3} .0532926
+{txt}{space 7}_cons {c |}{col 14}{res}{space 2}  .448099{col 26}{space 2} .0070281{col 37}{space 1}   63.76{col 46}{space 3}0.000{col 54}{space 4} .4342937{col 67}{space 3} .4619042
+{txt}{hline 13}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}{txt}
+{com}.                 reg Pcttrump  neventsln histblk
+
+{txt}      Source {c |}       SS           df       MS      Number of obs   ={res}       552
+{txt}{hline 13}{c +}{hline 34}   F(2, 549)       = {res}     1.75
+{txt}       Model {c |} {res} .019602363         2  .009801182   {txt}Prob > F        ={res}    0.1742
+{txt}    Residual {c |} {res} 3.06884584       549  .005589883   {txt}R-squared       ={res}    0.0063
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.0027
+{txt}       Total {c |} {res} 3.08844821       551  .005605169   {txt}Root MSE        =   {res} .07477
+
+{txt}{hline 13}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}    Pcttrump{col 14}{c |}      Coef.{col 26}   Std. Err.{col 38}      t{col 46}   P>|t|{col 54}     [95% Con{col 67}f. Interval]
+{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 3}neventsln {c |}{col 14}{res}{space 2} .0067141{col 26}{space 2} .0042923{col 37}{space 1}    1.56{col 46}{space 3}0.118{col 54}{space 4}-.0017174{col 67}{space 3} .0151455
+{txt}{space 5}histblk {c |}{col 14}{res}{space 2} .0048303{col 26}{space 2} .0148836{col 37}{space 1}    0.32{col 46}{space 3}0.746{col 54}{space 4}-.0244054{col 67}{space 3} .0340661
+{txt}{space 7}_cons {c |}{col 14}{res}{space 2} .4399544{col 26}{space 2} .0065421{col 37}{space 1}   67.25{col 46}{space 3}0.000{col 54}{space 4} .4271038{col 67}{space 3}  .452805
+{txt}{hline 13}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}{txt}
+{com}.                 reg Pcttrump  Navertedln histblk
+
+{txt}      Source {c |}       SS           df       MS      Number of obs   ={res}       552
+{txt}{hline 13}{c +}{hline 34}   F(2, 549)       = {res}    11.55
+{txt}       Model {c |} {res} .124687513         2  .062343757   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res} 2.96376069       549  .005398471   {txt}R-squared       ={res}    0.0404
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.0369
+{txt}       Total {c |} {res} 3.08844821       551  .005605169   {txt}Root MSE        =   {res} .07347
+
+{txt}{hline 13}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}    Pcttrump{col 14}{c |}      Coef.{col 26}   Std. Err.{col 38}      t{col 46}   P>|t|{col 54}     [95% Con{col 67}f. Interval]
+{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 2}Navertedln {c |}{col 14}{res}{space 2}-.0223966{col 26}{space 2} .0047751{col 37}{space 1}   -4.69{col 46}{space 3}0.000{col 54}{space 4}-.0317762{col 67}{space 3} -.013017
+{txt}{space 5}histblk {c |}{col 14}{res}{space 2} .0371607{col 26}{space 2} .0143006{col 37}{space 1}    2.60{col 46}{space 3}0.010{col 54}{space 4} .0090701{col 67}{space 3} .0652514
+{txt}{space 7}_cons {c |}{col 14}{res}{space 2} .4530032{col 26}{space 2} .0063272{col 37}{space 1}   71.60{col 46}{space 3}0.000{col 54}{space 4} .4405747{col 67}{space 3} .4654317
+{txt}{hline 13}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}{txt}
+{com}.                 reg Pcttrump  lynchratioln histblk
+
+{txt}      Source {c |}       SS           df       MS      Number of obs   ={res}       479
+{txt}{hline 13}{c +}{hline 34}   F(2, 476)       = {res}     6.55
+{txt}       Model {c |} {res} .074903456         2  .037451728   {txt}Prob > F        ={res}    0.0016
+{txt}    Residual {c |} {res} 2.72141245       476  .005717253   {txt}R-squared       ={res}    0.0268
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.0227
+{txt}       Total {c |} {res} 2.79631591       478  .005850033   {txt}Root MSE        =   {res} .07561
+
+{txt}{hline 13}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}    Pcttrump{col 14}{c |}      Coef.{col 26}   Std. Err.{col 38}      t{col 46}   P>|t|{col 54}     [95% Con{col 67}f. Interval]
+{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+lynchratioln {c |}{col 14}{res}{space 2} .0013661{col 26}{space 2} .0003979{col 37}{space 1}    3.43{col 46}{space 3}0.001{col 54}{space 4} .0005842{col 67}{space 3}  .002148
+{txt}{space 5}histblk {c |}{col 14}{res}{space 2}  .012358{col 26}{space 2} .0156336{col 37}{space 1}    0.79{col 46}{space 3}0.430{col 54}{space 4}-.0183613{col 67}{space 3} .0430774
+{txt}{space 7}_cons {c |}{col 14}{res}{space 2} .4486453{col 26}{space 2} .0075537{col 37}{space 1}   59.39{col 46}{space 3}0.000{col 54}{space 4} .4338026{col 67}{space 3}  .463488
+{txt}{hline 13}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}{txt}
+{com}. 
+. *Logged spline
+.                 reg Pcttrump  log_all_events0  log_all_events1 histblk
+
+{txt}      Source {c |}       SS           df       MS      Number of obs   ={res}       552
+{txt}{hline 13}{c +}{hline 34}   F(3, 548)       = {res}     1.19
+{txt}       Model {c |} {res} .019988265         3  .006662755   {txt}Prob > F        ={res}    0.3129
+{txt}    Residual {c |} {res} 3.06845994       548  .005599379   {txt}R-squared       ={res}    0.0065
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.0010
+{txt}       Total {c |} {res} 3.08844821       551  .005605169   {txt}Root MSE        =   {res} .07483
+
+{txt}{hline 16}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}       Pcttrump{col 17}{c |}      Coef.{col 29}   Std. Err.{col 41}      t{col 49}   P>|t|{col 57}     [95% Con{col 70}f. Interval]
+{hline 16}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+log_all_events0 {c |}{col 17}{res}{space 2} .0084825{col 29}{space 2} .0157423{col 40}{space 1}    0.54{col 49}{space 3}0.590{col 57}{space 4}-.0224401{col 70}{space 3} .0394052
+{txt}log_all_events1 {c |}{col 17}{res}{space 2}-.0087386{col 29}{space 2} .0055337{col 40}{space 1}   -1.58{col 49}{space 3}0.115{col 57}{space 4}-.0196084{col 70}{space 3} .0021313
+{txt}{space 8}histblk {c |}{col 17}{res}{space 2} .0228349{col 29}{space 2} .0153682{col 40}{space 1}    1.49{col 49}{space 3}0.138{col 57}{space 4}-.0073528{col 70}{space 3} .0530227
+{txt}{space 10}_cons {c |}{col 17}{res}{space 2} .4427135{col 29}{space 2}  .009152{col 40}{space 1}   48.37{col 49}{space 3}0.000{col 57}{space 4} .4247362{col 70}{space 3} .4606908
+{txt}{hline 16}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}{txt}
+{com}.                 reg Pcttrump  log_Averted0  log_Averted1 histblk
+
+{txt}      Source {c |}       SS           df       MS      Number of obs   ={res}       552
+{txt}{hline 13}{c +}{hline 34}   F(3, 548)       = {res}     8.32
+{txt}       Model {c |} {res} .134516719         3  .044838906   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res} 2.95393149       548  .005390386   {txt}R-squared       ={res}    0.0436
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.0383
+{txt}       Total {c |} {res} 3.08844821       551  .005605169   {txt}Root MSE        =   {res} .07342
+
+{txt}{hline 13}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}    Pcttrump{col 14}{c |}      Coef.{col 26}   Std. Err.{col 38}      t{col 46}   P>|t|{col 54}     [95% Con{col 67}f. Interval]
+{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+log_Averted0 {c |}{col 14}{res}{space 2}-.0076083{col 26}{space 2} .0119457{col 37}{space 1}   -0.64{col 46}{space 3}0.524{col 54}{space 4}-.0310733{col 67}{space 3} .0158568
+{txt}log_Averted1 {c |}{col 14}{res}{space 2}-.0305579{col 26}{space 2} .0077003{col 37}{space 1}   -3.97{col 46}{space 3}0.000{col 54}{space 4}-.0456837{col 67}{space 3}-.0154322
+{txt}{space 5}histblk {c |}{col 14}{res}{space 2} .0343043{col 26}{space 2} .0144456{col 37}{space 1}    2.37{col 46}{space 3}0.018{col 54}{space 4} .0059287{col 67}{space 3} .0626799
+{txt}{space 7}_cons {c |}{col 14}{res}{space 2} .4500363{col 26}{space 2} .0066934{col 37}{space 1}   67.24{col 46}{space 3}0.000{col 54}{space 4} .4368885{col 67}{space 3} .4631841
+{txt}{hline 13}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}{txt}
+{com}.                 reg Pcttrump  log_lynch0  log_lynch1 histblk
+
+{txt}      Source {c |}       SS           df       MS      Number of obs   ={res}       552
+{txt}{hline 13}{c +}{hline 34}   F(3, 548)       = {res}     2.13
+{txt}       Model {c |} {res} .035629744         3  .011876581   {txt}Prob > F        ={res}    0.0952
+{txt}    Residual {c |} {res} 3.05281846       548  .005570837   {txt}R-squared       ={res}    0.0115
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.0061
+{txt}       Total {c |} {res} 3.08844821       551  .005605169   {txt}Root MSE        =   {res} .07464
+
+{txt}{hline 13}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}    Pcttrump{col 14}{c |}      Coef.{col 26}   Std. Err.{col 38}      t{col 46}   P>|t|{col 54}     [95% Con{col 67}f. Interval]
+{hline 13}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 2}log_lynch0 {c |}{col 14}{res}{space 2} .0273062{col 26}{space 2} .0128744{col 37}{space 1}    2.12{col 46}{space 3}0.034{col 54}{space 4} .0020171{col 67}{space 3} .0525954
+{txt}{space 2}log_lynch1 {c |}{col 14}{res}{space 2}-.0011652{col 26}{space 2} .0063198{col 37}{space 1}   -0.18{col 46}{space 3}0.854{col 54}{space 4}-.0135793{col 67}{space 3} .0112489
+{txt}{space 5}histblk {c |}{col 14}{res}{space 2} .0046986{col 26}{space 2} .0148584{col 37}{space 1}    0.32{col 46}{space 3}0.752{col 54}{space 4}-.0244878{col 67}{space 3}  .033885
+{txt}{space 7}_cons {c |}{col 14}{res}{space 2}  .433618{col 26}{space 2} .0075238{col 37}{space 1}   57.63{col 46}{space 3}0.000{col 54}{space 4} .4188389{col 67}{space 3} .4483972
+{txt}{hline 13}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}{txt}
+{com}.                 reg Pcttrump  log_lynchratio0  log_lynchratio1 histblk
+{txt}note: log_lynchratio0 omitted because of collinearity
+
+      Source {c |}       SS           df       MS      Number of obs   ={res}       479
+{txt}{hline 13}{c +}{hline 34}   F(2, 476)       = {res}    14.76
+{txt}       Model {c |} {res} .163295671         2  .081647836   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res} 2.63302023       476  .005531555   {txt}R-squared       ={res}    0.0584
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.0544
+{txt}       Total {c |} {res} 2.79631591       478  .005850033   {txt}Root MSE        =   {res} .07437
+
+{txt}{hline 16}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}       Pcttrump{col 17}{c |}      Coef.{col 29}   Std. Err.{col 41}      t{col 49}   P>|t|{col 57}     [95% Con{col 70}f. Interval]
+{hline 16}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+log_lynchratio0 {c |}{col 17}{res}{space 2}        0{col 29}{txt}  (omitted)
+log_lynchratio1 {c |}{col 17}{res}{space 2} .0553561{col 29}{space 2} .0104312{col 40}{space 1}    5.31{col 49}{space 3}0.000{col 57}{space 4} .0348592{col 70}{space 3}  .075853
+{txt}{space 8}histblk {c |}{col 17}{res}{space 2} .0177471{col 29}{space 2} .0152974{col 40}{space 1}    1.16{col 49}{space 3}0.247{col 57}{space 4}-.0123117{col 70}{space 3} .0478058
+{txt}{space 10}_cons {c |}{col 17}{res}{space 2}-1.082344{col 29}{space 2} .2872166{col 40}{space 1}   -3.77{col 49}{space 3}0.000{col 57}{space 4}-1.646713{col 70}{space 3} -.517975
+{txt}{hline 16}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}{txt}
+{com}. log close
+      {txt}name:  {res}<unnamed>
+       {txt}log:  {res}C:\Users\bobab\Desktop\annals_pub\Analysis\First Submission Regressions\regressions_histblk.smcl
+  {txt}log type:  {res}smcl
+ {txt}closed on:  {res} 2 Nov 2020, 10:29:16
+{txt}{.-}
+{smcl}
+{txt}{sf}{ul off}

@@ -1,0 +1,123 @@
+Data File: RCMSMGCY(Partial Data Codebook - Max of 10 responses shown)
+
+1) FIPSMERG
+Aggregated county FIPS code -- See Appendix C for details
+RANGE: 1001 to 56045
+	N	Mean	Std. Deviation
+Total	276765	29919.01	15130.282
+
+
+2) CNTYNM
+County name in 2010
+RANGE:  to 
+	N	Mean	Std. Deviation
+Total	276765		
+
+
+3) STATEAB
+State abbreviation
+RANGE:  to 
+	N	Mean	Std. Deviation
+Total	276764		
+
+
+4) YEAR
+Year of data collection
+RANGE: 1980 to 2010
+	N	Mean	Std. Deviation
+Total	276765	1996.888	11.172
+1980)	55272	20.0
+1990)	63387	22.9
+2000)	70309	25.4
+2010)	87797	31.7
+
+
+5) TOTPOP
+Total population
+RANGE: 0 to 9818605
+	N	Mean	Std. Deviation
+Total	276765	204845.34	552446.48
+
+
+6) GRPCODE
+Religious group three-digit code (GROUPCODE)
+RANGE:  to 
+	N	Mean	Std. Deviation
+Total	276765		
+
+
+7) GRPNAME
+Religious group name description GROUPNAME)
+RANGE:  to 
+	N	Mean	Std. Deviation
+Total	276765		
+
+
+8) ADHERENT
+Number of adherents (ADHERENTS)
+RANGE: 0 to 3806377
+	N	Mean	Std. Deviation
+Total	261556	2277.678	21231.959
+
+
+9) CONGREG
+Number of congregations (CONGREGATIONS)
+RANGE: 0 to 5858
+	N	Mean	Std. Deviation
+Total	275250	4.823	22.628
+
+
+10) RELTRAD
+Religious tradition category - based on Steensland et al (2000)
+RANGE: 1 to 6
+	N	Mean	Std. Deviation
+Total	276765	1.882	1.248
+1) Evangelical Protestant	144436	52.2
+2) Mainline Protestant	80934	29.2
+3) Catholic	11803	4.3
+4) Other	26756	9.7
+5) Orthodox	4794	1.7
+6) Black Protestant	8042	2.9
+
+
+11) FAMILY
+Religious family category - created by theARDA.com
+RANGE: 87 to 115
+	N	Mean	Std. Deviation
+Total	273077	95.553	7.594
+Missing	3688
+
+
+12) NOTE_MIS
+Flag variable indicating how group is affected by new missing data estimates -- see Appendices A and B for details (NOTE_MISSING)
+RANGE: 0 to 4
+	N	Mean	Std. Deviation
+Total	276765	0.291	0.975
+0) No missing data estimated for this group	251878	91.0
+1) Adherents estimated from congregation size in this year	2457	0.9
+2) Adherents estimated from congregation size in another year for this group	3280	1.2
+3) Interpolated or extrapolated values in this year	5086	1.8
+4) Interpolated or extrapolated values in another year	14064	5.1
+
+
+13) NOTE_COM
+Flag variable indicating how group is affected by combined group changes -- see appendix A for details (NOTE_COMBINED)
+RANGE: 0 to 2
+	N	Mean	Std. Deviation
+Total	276765	0.227	0.568
+0) Not affected by combined groupings	234241	84.6
+1) Included in a combined grouping	22207	8.0
+2) Combined grouping	20317	7.3
+
+
+14) NOTE_MEA
+Flag variable indicating how group is affected by measurement changes in one or more years -- see Appendix A for details (NOTE_MEASURE)
+RANGE: 0 to 3
+	N	Mean	Std. Deviation
+Total	276765	0.322	0.797
+0) Affected by zero or minor measurement changes	232245	83.9
+1) Both adherent and congregation counts affected by measurement change	12888	4.7
+2) Only adherent counts affected by measurement change	18583	6.7
+3) Only congregations affected by measurement change	13049	4.7
+
+

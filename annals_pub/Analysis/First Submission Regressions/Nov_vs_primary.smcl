@@ -1,0 +1,117 @@
+{smcl}
+{com}{sf}{ul off}{txt}{.-}
+      name:  {res}<unnamed>
+       {txt}log:  {res}C:\Users\bobab\Desktop\annals_pub\Analysis\First Submission Regressions\Nov_vs_primary.smcl
+  {txt}log type:  {res}smcl
+ {txt}opened on:  {res} 2 Nov 2020, 10:29:29
+{txt}
+{com}.                 reg NovTrump lynchratio pfarmown totpop PcthhNonhispwhite PctPop65plus PctWorkingclass PctUnemploy Pcthhlessthan25k Pctevangel changepercentFRNBrn
+
+{txt}      Source {c |}       SS           df       MS      Number of obs   ={res}       652
+{txt}{hline 13}{c +}{hline 34}   F(10, 641)      = {res}   196.23
+{txt}       Model {c |} {res} 10.5991039        10  1.05991039   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res} 3.46224536       641  .005401319   {txt}R-squared       ={res}    0.7538
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.7499
+{txt}       Total {c |} {res} 14.0613492       651  .021599615   {txt}Root MSE        =   {res} .07349
+
+{txt}{hline 20}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}           NovTrump{col 21}{c |}      Coef.{col 33}   Std. Err.{col 45}      t{col 53}   P>|t|{col 61}     [95% Con{col 74}f. Interval]
+{hline 20}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 9}lynchratio {c |}{col 21}{res}{space 2}  .022301{col 33}{space 2} .0082737{col 44}{space 1}    2.70{col 53}{space 3}0.007{col 61}{space 4} .0060542{col 74}{space 3} .0385479
+{txt}{space 11}pfarmown {c |}{col 21}{res}{space 2}-.0319688{col 33}{space 2} .0194887{col 44}{space 1}   -1.64{col 53}{space 3}0.101{col 61}{space 4}-.0702381{col 74}{space 3} .0063006
+{txt}{space 13}totpop {c |}{col 21}{res}{space 2}-8.18e-08{col 33}{space 2} 2.98e-08{col 44}{space 1}   -2.75{col 53}{space 3}0.006{col 61}{space 4}-1.40e-07{col 74}{space 3}-2.33e-08
+{txt}{space 2}PcthhNonhispwhite {c |}{col 21}{res}{space 2} .6501978{col 33}{space 2} .0239019{col 44}{space 1}   27.20{col 53}{space 3}0.000{col 61}{space 4} .6032623{col 74}{space 3} .6971333
+{txt}{space 7}PctPop65plus {c |}{col 21}{res}{space 2}-.3597545{col 33}{space 2} .0907246{col 44}{space 1}   -3.97{col 53}{space 3}0.000{col 61}{space 4}-.5379079{col 74}{space 3}-.1816012
+{txt}{space 4}PctWorkingclass {c |}{col 21}{res}{space 2} .1713698{col 33}{space 2} .0505651{col 44}{space 1}    3.39{col 53}{space 3}0.001{col 61}{space 4} .0720765{col 74}{space 3} .2706631
+{txt}{space 8}PctUnemploy {c |}{col 21}{res}{space 2}  .353251{col 33}{space 2}  .276922{col 44}{space 1}    1.28{col 53}{space 3}0.203{col 61}{space 4}-.1905328{col 74}{space 3} .8970348
+{txt}{space 3}Pcthhlessthan25k {c |}{col 21}{res}{space 2} .0568033{col 33}{space 2} .0469599{col 44}{space 1}    1.21{col 53}{space 3}0.227{col 61}{space 4}-.0354105{col 74}{space 3} .1490171
+{txt}{space 9}Pctevangel {c |}{col 21}{res}{space 2} .1322004{col 33}{space 2} .0232091{col 44}{space 1}    5.70{col 53}{space 3}0.000{col 61}{space 4} .0866253{col 74}{space 3} .1777755
+{txt}changepercentFRNBrn {c |}{col 21}{res}{space 2}-.1476305{col 33}{space 2} .0360495{col 44}{space 1}   -4.10{col 53}{space 3}0.000{col 61}{space 4}  -.21842{col 74}{space 3} -.076841
+{txt}{space 14}_cons {c |}{col 21}{res}{space 2}-.1475245{col 33}{space 2} .0598729{col 44}{space 1}   -2.46{col 53}{space 3}0.014{col 61}{space 4}-.2650953{col 74}{space 3}-.0299538
+{txt}{hline 20}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}{txt}
+{com}.                 reg NovTrump nolyn pfarmown totpop PcthhNonhispwhite PctPop65plus PctWorkingclass PctUnemploy Pcthhlessthan25k Pctevangel changepercentFRNBrn
+
+{txt}      Source {c |}       SS           df       MS      Number of obs   ={res}       630
+{txt}{hline 13}{c +}{hline 34}   F(10, 619)      = {res}   190.68
+{txt}       Model {c |} {res} 10.2975752        10  1.02975752   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res} 3.34280419       619   .00540033   {txt}R-squared       ={res}    0.7549
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.7510
+{txt}       Total {c |} {res} 13.6403794       629  .021685818   {txt}Root MSE        =   {res} .07349
+
+{txt}{hline 20}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}           NovTrump{col 21}{c |}      Coef.{col 33}   Std. Err.{col 45}      t{col 53}   P>|t|{col 61}     [95% Con{col 74}f. Interval]
+{hline 20}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 14}nolyn {c |}{col 21}{res}{space 2}-.0137978{col 33}{space 2} .0074409{col 44}{space 1}   -1.85{col 53}{space 3}0.064{col 61}{space 4}-.0284103{col 74}{space 3} .0008147
+{txt}{space 11}pfarmown {c |}{col 21}{res}{space 2} -.027654{col 33}{space 2} .0196613{col 44}{space 1}   -1.41{col 53}{space 3}0.160{col 61}{space 4} -.066265{col 74}{space 3}  .010957
+{txt}{space 13}totpop {c |}{col 21}{res}{space 2}-9.57e-08{col 33}{space 2} 2.98e-08{col 44}{space 1}   -3.21{col 53}{space 3}0.001{col 61}{space 4}-1.54e-07{col 74}{space 3}-3.72e-08
+{txt}{space 2}PcthhNonhispwhite {c |}{col 21}{res}{space 2} .6533558{col 33}{space 2} .0246236{col 44}{space 1}   26.53{col 53}{space 3}0.000{col 61}{space 4} .6049999{col 74}{space 3} .7017117
+{txt}{space 7}PctPop65plus {c |}{col 21}{res}{space 2}-.3574997{col 33}{space 2} .0934556{col 44}{space 1}   -3.83{col 53}{space 3}0.000{col 61}{space 4}-.5410282{col 74}{space 3}-.1739712
+{txt}{space 4}PctWorkingclass {c |}{col 21}{res}{space 2}  .156217{col 33}{space 2} .0514582{col 44}{space 1}    3.04{col 53}{space 3}0.002{col 61}{space 4} .0551632{col 74}{space 3} .2572708
+{txt}{space 8}PctUnemploy {c |}{col 21}{res}{space 2}  .256516{col 33}{space 2} .2787034{col 44}{space 1}    0.92{col 53}{space 3}0.358{col 61}{space 4}-.2908029{col 74}{space 3} .8038348
+{txt}{space 3}Pcthhlessthan25k {c |}{col 21}{res}{space 2} .0664274{col 33}{space 2} .0479746{col 44}{space 1}    1.38{col 53}{space 3}0.167{col 61}{space 4}-.0277853{col 74}{space 3} .1606401
+{txt}{space 9}Pctevangel {c |}{col 21}{res}{space 2} .1281703{col 33}{space 2} .0235633{col 44}{space 1}    5.44{col 53}{space 3}0.000{col 61}{space 4} .0818966{col 74}{space 3}  .174444
+{txt}changepercentFRNBrn {c |}{col 21}{res}{space 2}-.1379778{col 33}{space 2} .0370331{col 44}{space 1}   -3.73{col 53}{space 3}0.000{col 61}{space 4}-.2107036{col 74}{space 3} -.065252
+{txt}{space 14}_cons {c |}{col 21}{res}{space 2}-.1132988{col 33}{space 2} .0616469{col 44}{space 1}   -1.84{col 53}{space 3}0.067{col 61}{space 4}-.2343612{col 74}{space 3} .0077636
+{txt}{hline 20}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}{txt}
+{com}. 
+.                 reg Pcttrump lynchratio pfarmown totpop PcthhNonhispwhite PctPop65plus PctWorkingclass PctUnemploy Pcthhlessthan25k Pctevangel changepercentFRNBrn
+
+{txt}      Source {c |}       SS           df       MS      Number of obs   ={res}       551
+{txt}{hline 13}{c +}{hline 34}   F(10, 540)      = {res}    39.02
+{txt}       Model {c |} {res} 1.29476305        10  .129476305   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res} 1.79162656       540  .003317827   {txt}R-squared       ={res}    0.4195
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.4088
+{txt}       Total {c |} {res} 3.08638962       550  .005611617   {txt}Root MSE        =   {res}  .0576
+
+{txt}{hline 20}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}           Pcttrump{col 21}{c |}      Coef.{col 33}   Std. Err.{col 45}      t{col 53}   P>|t|{col 61}     [95% Con{col 74}f. Interval]
+{hline 20}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 9}lynchratio {c |}{col 21}{res}{space 2} .0171633{col 33}{space 2}  .007194{col 44}{space 1}    2.39{col 53}{space 3}0.017{col 61}{space 4} .0030317{col 74}{space 3} .0312949
+{txt}{space 11}pfarmown {c |}{col 21}{res}{space 2} .0462547{col 33}{space 2} .0156018{col 44}{space 1}    2.96{col 53}{space 3}0.003{col 61}{space 4} .0156071{col 74}{space 3} .0769023
+{txt}{space 13}totpop {c |}{col 21}{res}{space 2}-9.31e-08{col 33}{space 2} 2.45e-08{col 44}{space 1}   -3.79{col 53}{space 3}0.000{col 61}{space 4}-1.41e-07{col 74}{space 3}-4.49e-08
+{txt}{space 2}PcthhNonhispwhite {c |}{col 21}{res}{space 2}  .033205{col 33}{space 2} .0213945{col 44}{space 1}    1.55{col 53}{space 3}0.121{col 61}{space 4}-.0088215{col 74}{space 3} .0752316
+{txt}{space 7}PctPop65plus {c |}{col 21}{res}{space 2} .0575547{col 33}{space 2} .0777436{col 44}{space 1}    0.74{col 53}{space 3}0.459{col 61}{space 4}-.0951623{col 74}{space 3} .2102717
+{txt}{space 4}PctWorkingclass {c |}{col 21}{res}{space 2}  .134555{col 33}{space 2} .0446638{col 44}{space 1}    3.01{col 53}{space 3}0.003{col 61}{space 4} .0468189{col 74}{space 3}  .222291
+{txt}{space 8}PctUnemploy {c |}{col 21}{res}{space 2} .6855227{col 33}{space 2} .2338376{col 44}{space 1}    2.93{col 53}{space 3}0.004{col 61}{space 4} .2261798{col 74}{space 3} 1.144866
+{txt}{space 3}Pcthhlessthan25k {c |}{col 21}{res}{space 2} .3568368{col 33}{space 2} .0444627{col 44}{space 1}    8.03{col 53}{space 3}0.000{col 61}{space 4} .2694957{col 74}{space 3} .4441779
+{txt}{space 9}Pctevangel {c |}{col 21}{res}{space 2}-.1102874{col 33}{space 2}  .021079{col 44}{space 1}   -5.23{col 53}{space 3}0.000{col 61}{space 4}-.1516943{col 74}{space 3}-.0688805
+{txt}changepercentFRNBrn {c |}{col 21}{res}{space 2}-.1044175{col 33}{space 2} .0306653{col 44}{space 1}   -3.41{col 53}{space 3}0.001{col 61}{space 4}-.1646555{col 74}{space 3}-.0441795
+{txt}{space 14}_cons {c |}{col 21}{res}{space 2}  .079014{col 33}{space 2} .0517835{col 44}{space 1}    1.53{col 53}{space 3}0.128{col 61}{space 4}-.0227077{col 74}{space 3} .1807358
+{txt}{hline 20}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}{txt}
+{com}.                 reg Pcttrump nolyn pfarmown totpop PcthhNonhispwhite PctPop65plus PctWorkingclass PctUnemploy Pcthhlessthan25k Pctevangel changepercentFRNBrn
+
+{txt}      Source {c |}       SS           df       MS      Number of obs   ={res}       531
+{txt}{hline 13}{c +}{hline 34}   F(10, 520)      = {res}    38.35
+{txt}       Model {c |} {res} 1.26021964        10  .126021964   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res} 1.70898135       520  .003286503   {txt}R-squared       ={res}    0.4244
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.4134
+{txt}       Total {c |} {res} 2.96920099       530  .005602266   {txt}Root MSE        =   {res} .05733
+
+{txt}{hline 20}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}           Pcttrump{col 21}{c |}      Coef.{col 33}   Std. Err.{col 45}      t{col 53}   P>|t|{col 61}     [95% Con{col 74}f. Interval]
+{hline 20}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 14}nolyn {c |}{col 21}{res}{space 2}-.0178215{col 33}{space 2} .0065009{col 44}{space 1}   -2.74{col 53}{space 3}0.006{col 61}{space 4}-.0305927{col 74}{space 3}-.0050504
+{txt}{space 11}pfarmown {c |}{col 21}{res}{space 2} .0507619{col 33}{space 2} .0156825{col 44}{space 1}    3.24{col 53}{space 3}0.001{col 61}{space 4} .0199531{col 74}{space 3} .0815707
+{txt}{space 13}totpop {c |}{col 21}{res}{space 2}-1.02e-07{col 33}{space 2} 2.46e-08{col 44}{space 1}   -4.14{col 53}{space 3}0.000{col 61}{space 4}-1.50e-07{col 74}{space 3}-5.34e-08
+{txt}{space 2}PcthhNonhispwhite {c |}{col 21}{res}{space 2} .0459742{col 33}{space 2} .0217036{col 44}{space 1}    2.12{col 53}{space 3}0.035{col 61}{space 4} .0033368{col 74}{space 3} .0886117
+{txt}{space 7}PctPop65plus {c |}{col 21}{res}{space 2} .0592225{col 33}{space 2} .0797783{col 44}{space 1}    0.74{col 53}{space 3}0.458{col 61}{space 4}-.0975049{col 74}{space 3} .2159498
+{txt}{space 4}PctWorkingclass {c |}{col 21}{res}{space 2} .1346551{col 33}{space 2} .0450674{col 44}{space 1}    2.99{col 53}{space 3}0.003{col 61}{space 4} .0461186{col 74}{space 3} .2231917
+{txt}{space 8}PctUnemploy {c |}{col 21}{res}{space 2} .5936994{col 33}{space 2} .2343183{col 44}{space 1}    2.53{col 53}{space 3}0.012{col 61}{space 4} .1333726{col 74}{space 3} 1.054026
+{txt}{space 3}Pcthhlessthan25k {c |}{col 21}{res}{space 2} .3710056{col 33}{space 2} .0449558{col 44}{space 1}    8.25{col 53}{space 3}0.000{col 61}{space 4} .2826882{col 74}{space 3}  .459323
+{txt}{space 9}Pctevangel {c |}{col 21}{res}{space 2}-.1161397{col 33}{space 2} .0212397{col 44}{space 1}   -5.47{col 53}{space 3}0.000{col 61}{space 4}-.1578658{col 74}{space 3}-.0744136
+{txt}changepercentFRNBrn {c |}{col 21}{res}{space 2}-.0979474{col 33}{space 2} .0314201{col 44}{space 1}   -3.12{col 53}{space 3}0.002{col 61}{space 4}-.1596733{col 74}{space 3}-.0362214
+{txt}{space 14}_cons {c |}{col 21}{res}{space 2} .0936576{col 33}{space 2} .0530788{col 44}{space 1}    1.76{col 53}{space 3}0.078{col 61}{space 4}-.0106177{col 74}{space 3} .1979328
+{txt}{hline 20}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}{txt}
+{com}. 
+.         log close
+      {txt}name:  {res}<unnamed>
+       {txt}log:  {res}C:\Users\bobab\Desktop\annals_pub\Analysis\First Submission Regressions\Nov_vs_primary.smcl
+  {txt}log type:  {res}smcl
+ {txt}closed on:  {res} 2 Nov 2020, 10:29:29
+{txt}{.-}
+{smcl}
+{txt}{sf}{ul off}

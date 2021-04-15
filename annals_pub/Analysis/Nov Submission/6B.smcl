@@ -1,0 +1,39 @@
+{smcl}
+{com}{sf}{ul off}{txt}{.-}
+      name:  {res}<unnamed>
+       {txt}log:  {res}C:\Users\bobab\Desktop\annals_pub\Analysis\Nov Submission\6B.smcl
+  {txt}log type:  {res}smcl
+ {txt}opened on:  {res}14 Apr 2021, 16:40:55
+{txt}
+{com}. *************************************************
+. *MODEL 6B
+. **************************************************
+. reg r_T_C lynchratio pfarmown Pcturban PcthhNonhispwhite PctPop65plus PctWorkingclass PctUnemploy Pcthhlessthan25k Pctevangel changepercentFRNBrn
+
+{txt}      Source {c |}       SS           df       MS      Number of obs   ={res}       562
+{txt}{hline 13}{c +}{hline 34}   F(10, 551)      = {res}    75.58
+{txt}       Model {c |} {res} 751.887156        10  75.1887156   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res}  548.13294       551  .994796624   {txt}R-squared       ={res}    0.5784
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.5707
+{txt}       Total {c |} {res}  1300.0201       561  2.31732637   {txt}Root MSE        =   {res} .99739
+
+{txt}{hline 20}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}              r_T_C{col 21}{c |}      Coef.{col 33}   Std. Err.{col 45}      t{col 53}   P>|t|{col 61}     [95% Con{col 74}f. Interval]
+{hline 20}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 9}lynchratio {c |}{col 21}{res}{space 2} .3334395{col 33}{space 2} .1337872{col 44}{space 1}    2.49{col 53}{space 3}0.013{col 61}{space 4} .0706442{col 74}{space 3} .5962349
+{txt}{space 11}pfarmown {c |}{col 21}{res}{space 2}-.1509025{col 33}{space 2} .2720759{col 44}{space 1}   -0.55{col 53}{space 3}0.579{col 61}{space 4}-.6853353{col 74}{space 3} .3835303
+{txt}{space 11}Pcturban {c |}{col 21}{res}{space 2} -.005434{col 33}{space 2}  .002217{col 44}{space 1}   -2.45{col 53}{space 3}0.015{col 61}{space 4}-.0097889{col 74}{space 3}-.0010791
+{txt}{space 2}PcthhNonhispwhite {c |}{col 21}{res}{space 2} .0599064{col 33}{space 2} .0034505{col 44}{space 1}   17.36{col 53}{space 3}0.000{col 61}{space 4} .0531287{col 74}{space 3}  .066684
+{txt}{space 7}PctPop65plus {c |}{col 21}{res}{space 2}-.0750413{col 33}{space 2} .0150879{col 44}{space 1}   -4.97{col 53}{space 3}0.000{col 61}{space 4}-.1046781{col 74}{space 3}-.0454045
+{txt}{space 4}PctWorkingclass {c |}{col 21}{res}{space 2} .0009227{col 33}{space 2}  .007464{col 44}{space 1}    0.12{col 53}{space 3}0.902{col 61}{space 4}-.0137387{col 74}{space 3} .0155842
+{txt}{space 8}PctUnemploy {c |}{col 21}{res}{space 2} -.022792{col 33}{space 2} .0401299{col 44}{space 1}   -0.57{col 53}{space 3}0.570{col 61}{space 4}-.1016182{col 74}{space 3} .0560343
+{txt}{space 3}Pcthhlessthan25k {c |}{col 21}{res}{space 2} .0309645{col 33}{space 2} .0072009{col 44}{space 1}    4.30{col 53}{space 3}0.000{col 61}{space 4} .0168198{col 74}{space 3} .0451092
+{txt}{space 9}Pctevangel {c |}{col 21}{res}{space 2} .0123528{col 33}{space 2} .0034578{col 44}{space 1}    3.57{col 53}{space 3}0.000{col 61}{space 4} .0055606{col 74}{space 3} .0191449
+{txt}changepercentFRNBrn {c |}{col 21}{res}{space 2}-.9366849{col 33}{space 2}  .557075{col 44}{space 1}   -1.68{col 53}{space 3}0.093{col 61}{space 4}-2.030935{col 74}{space 3} .1575657
+{txt}{space 14}_cons {c |}{col 21}{res}{space 2}-3.421988{col 33}{space 2} .9997876{col 44}{space 1}   -3.42{col 53}{space 3}0.001{col 61}{space 4} -5.38585{col 74}{space 3}-1.458127
+{txt}{hline 20}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}{txt}
+{com}. 
+. capture log close
+{smcl}
+{com}{sf}{ul off}

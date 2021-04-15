@@ -1,0 +1,71 @@
+{smcl}
+{com}{sf}{ul off}{txt}{.-}
+      name:  {res}<unnamed>
+       {txt}log:  {res}C:\Users\bobab\Desktop\annals_pub\Analysis\Nov Submission\10B.smcl
+  {txt}log type:  {res}smcl
+ {txt}opened on:  {res}14 Apr 2021, 16:40:56
+{txt}
+{com}. *************************************************
+. *MODEL 10B
+. **************************************************
+. reg r_T_C pfarmown totpop PcthhNonhispwhite PctPop65plus PctWorkingclass PctUnemploy Pcthhlessthan25k Pctevangel changepercentFRNBrn
+
+{txt}      Source {c |}       SS           df       MS      Number of obs   ={res}       562
+{txt}{hline 13}{c +}{hline 34}   F(9, 552)       = {res}    81.09
+{txt}       Model {c |} {res} 740.186499         9  82.2429443   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res} 559.833597       552   1.0141913   {txt}R-squared       ={res}    0.5694
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.5623
+{txt}       Total {c |} {res}  1300.0201       561  2.31732637   {txt}Root MSE        =   {res} 1.0071
+
+{txt}{hline 20}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}              r_T_C{col 21}{c |}      Coef.{col 33}   Std. Err.{col 45}      t{col 53}   P>|t|{col 61}     [95% Con{col 74}f. Interval]
+{hline 20}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 11}pfarmown {c |}{col 21}{res}{space 2}-.2689745{col 33}{space 2} .2776347{col 44}{space 1}   -0.97{col 53}{space 3}0.333{col 61}{space 4}-.8143243{col 74}{space 3} .2763753
+{txt}{space 13}totpop {c |}{col 21}{res}{space 2} 6.43e-07{col 33}{space 2} 4.13e-07{col 44}{space 1}    1.56{col 53}{space 3}0.120{col 61}{space 4}-1.67e-07{col 74}{space 3} 1.45e-06
+{txt}{space 2}PcthhNonhispwhite {c |}{col 21}{res}{space 2} .0631161{col 33}{space 2} .0035676{col 44}{space 1}   17.69{col 53}{space 3}0.000{col 61}{space 4} .0561085{col 74}{space 3} .0701238
+{txt}{space 7}PctPop65plus {c |}{col 21}{res}{space 2}-.0732619{col 33}{space 2} .0149367{col 44}{space 1}   -4.90{col 53}{space 3}0.000{col 61}{space 4}-.1026017{col 74}{space 3}-.0439222
+{txt}{space 4}PctWorkingclass {c |}{col 21}{res}{space 2} .0072197{col 33}{space 2} .0074047{col 44}{space 1}    0.98{col 53}{space 3}0.330{col 61}{space 4}-.0073252{col 74}{space 3} .0217646
+{txt}{space 8}PctUnemploy {c |}{col 21}{res}{space 2} -.029999{col 33}{space 2} .0401529{col 44}{space 1}   -0.75{col 53}{space 3}0.455{col 61}{space 4}-.1088701{col 74}{space 3} .0488721
+{txt}{space 3}Pcthhlessthan25k {c |}{col 21}{res}{space 2} .0411501{col 33}{space 2} .0072026{col 44}{space 1}    5.71{col 53}{space 3}0.000{col 61}{space 4} .0270022{col 74}{space 3} .0552979
+{txt}{space 9}Pctevangel {c |}{col 21}{res}{space 2} .0119929{col 33}{space 2} .0034673{col 44}{space 1}    3.46{col 53}{space 3}0.001{col 61}{space 4} .0051821{col 74}{space 3} .0188037
+{txt}changepercentFRNBrn {c |}{col 21}{res}{space 2}-1.961455{col 33}{space 2}  .532564{col 44}{space 1}   -3.68{col 53}{space 3}0.000{col 61}{space 4}-3.007555{col 74}{space 3}-.9153553
+{txt}{space 14}_cons {c |}{col 21}{res}{space 2}-5.819339{col 33}{space 2} .8949589{col 44}{space 1}   -6.50{col 53}{space 3}0.000{col 61}{space 4}-7.577281{col 74}{space 3}-4.061397
+{txt}{hline 20}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}{txt}
+{com}. estimate store model1
+{txt}
+{com}. reg r_T_C lynchratio pfarmown totpop PcthhNonhispwhite PctPop65plus PctWorkingclass PctUnemploy Pcthhlessthan25k Pctevangel changepercentFRNBrn
+
+{txt}      Source {c |}       SS           df       MS      Number of obs   ={res}       562
+{txt}{hline 13}{c +}{hline 34}   F(10, 551)      = {res}    75.02
+{txt}       Model {c |} {res} 749.523631        10  74.9523631   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res} 550.496465       551  .999086143   {txt}R-squared       ={res}    0.5765
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.5689
+{txt}       Total {c |} {res}  1300.0201       561  2.31732637   {txt}Root MSE        =   {res} .99954
+
+{txt}{hline 20}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}              r_T_C{col 21}{c |}      Coef.{col 33}   Std. Err.{col 45}      t{col 53}   P>|t|{col 61}     [95% Con{col 74}f. Interval]
+{hline 20}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 9}lynchratio {c |}{col 21}{res}{space 2}  .408281{col 33}{space 2} .1335531{col 44}{space 1}    3.06{col 53}{space 3}0.002{col 61}{space 4} .1459455{col 74}{space 3} .6706165
+{txt}{space 11}pfarmown {c |}{col 21}{res}{space 2}-.3008661{col 33}{space 2} .2757568{col 44}{space 1}   -1.09{col 53}{space 3}0.276{col 61}{space 4}-.8425294{col 74}{space 3} .2407972
+{txt}{space 13}totpop {c |}{col 21}{res}{space 2} 7.83e-07{col 33}{space 2} 4.12e-07{col 44}{space 1}    1.90{col 53}{space 3}0.058{col 61}{space 4}-2.58e-08{col 74}{space 3} 1.59e-06
+{txt}{space 2}PcthhNonhispwhite {c |}{col 21}{res}{space 2} .0629641{col 33}{space 2} .0035412{col 44}{space 1}   17.78{col 53}{space 3}0.000{col 61}{space 4} .0560081{col 74}{space 3} .0699201
+{txt}{space 7}PctPop65plus {c |}{col 21}{res}{space 2}-.0685269{col 33}{space 2} .0149058{col 44}{space 1}   -4.60{col 53}{space 3}0.000{col 61}{space 4} -.097806{col 74}{space 3}-.0392478
+{txt}{space 4}PctWorkingclass {c |}{col 21}{res}{space 2} .0083896{col 33}{space 2} .0073593{col 44}{space 1}    1.14{col 53}{space 3}0.255{col 61}{space 4}-.0060661{col 74}{space 3} .0228454
+{txt}{space 8}PctUnemploy {c |}{col 21}{res}{space 2} -.036426{col 33}{space 2} .0399081{col 44}{space 1}   -0.91{col 53}{space 3}0.362{col 61}{space 4}-.1148167{col 74}{space 3} .0419647
+{txt}{space 3}Pcthhlessthan25k {c |}{col 21}{res}{space 2} .0391935{col 33}{space 2} .0071774{col 44}{space 1}    5.46{col 53}{space 3}0.000{col 61}{space 4} .0250952{col 74}{space 3} .0532919
+{txt}{space 9}Pctevangel {c |}{col 21}{res}{space 2} .0109543{col 33}{space 2} .0034581{col 44}{space 1}    3.17{col 53}{space 3}0.002{col 61}{space 4} .0041615{col 74}{space 3} .0177471
+{txt}changepercentFRNBrn {c |}{col 21}{res}{space 2}-1.768588{col 33}{space 2} .5323348{col 44}{space 1}   -3.32{col 53}{space 3}0.001{col 61}{space 4}-2.814242{col 74}{space 3}-.7229345
+{txt}{space 14}_cons {c |}{col 21}{res}{space 2}-5.705417{col 33}{space 2} .8890506{col 44}{space 1}   -6.42{col 53}{space 3}0.000{col 61}{space 4} -7.45176{col 74}{space 3}-3.959073
+{txt}{hline 20}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}{txt}
+{com}. estimate store model2
+{txt}
+{com}. lrtest model1 model2
+
+{txt}Likelihood-ratio test{col 55}LR chi2({res}1{txt}){col 67}={res}      9.45
+{txt}(Assumption: {res}{stata est replay model1:model1}{txt} nested in {res}{stata est replay model2:model2}{txt}){col 55}Prob > chi2 = {res}   0.0021
+{txt}
+{com}. capture log close
+{smcl}
+{com}{sf}{ul off}
